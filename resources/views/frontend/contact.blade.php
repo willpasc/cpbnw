@@ -3,7 +3,8 @@
 @section('head_and_title')
 <meta name="description" content="BNW Contact Us">
 <meta name="author" content="PT. Generasi Muda Gigih">
-<meta name="keywords" content="Ben and Wyatt, Interior, Office, Residential, Apartment, Commercial, Spaces">
+<meta name="keywords"
+    content="Ben and Wyatt, Branding House, Design House, Office, Residential, Apartment, Commercial, Spaces">
 
 <title>BNW - CONTACTS</title>
 @endsection
