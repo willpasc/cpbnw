@@ -15,7 +15,7 @@
         <div class=" w-100 header-img" style="background-image: url('{{ asset('images/bnw/portfolio/bnw-web-portfolio-header.jpg') }}');
                 background-repeat: no-repeat;
                 background-position: center;
-                background-size: contain;">
+                background-size: cover;">
             <div class="container">
                 <div class="row" style="padding-top:10%;">
                     <div class="col-md-6 text-white h-100 d-flex justify-content-center flex-column">
@@ -46,6 +46,11 @@
                 </p>
                 <p>One of the leading property enterprise in Indonesia. We helped creating<br />
                     the visual identity — logo, company profile, website, and more.</p>
+                <p class="pt-4">Details&nbsp<a href="#">
+                        <img src="{{ asset('images/bnw/portfolio/bnw-web-portfolio-detail-icon.png') }}" alt="IMG"
+                            style="width:25px; top:" class="img-fluid">
+                    </a>
+                </p>
             </div>
         </div>
         <div class="row pb-3">
@@ -58,6 +63,11 @@
                 </p>
                 <p>Visual identity for a new prestegious apartment in Makassar, which<br />
                     includes: logo, catalogue, website, collaterals, and more.
+                </p>
+                <p class="pt-4">Details&nbsp<a href="#">
+                        <img src="{{ asset('images/bnw/portfolio/bnw-web-portfolio-detail-icon.png') }}" alt="IMG"
+                            style="width:25px; top:" class="img-fluid">
+                    </a>
                 </p>
             </div>
         </div>
@@ -73,6 +83,11 @@
                 <p>Triniti Land is having it’s 10th anniversary themed “10 Langkah Besar.”<br />
                     Hence creating a whole campaign: logo, website, and other collaterals.
                 </p>
+                <p class="pt-4">Details&nbsp<a href="#">
+                        <img src="{{ asset('images/bnw/portfolio/bnw-web-portfolio-detail-icon.png') }}" alt="IMG"
+                            style="width:25px; top:" class="img-fluid">
+                    </a>
+                </p>
             </div>
         </div>
         <div class="row pb-3">
@@ -85,6 +100,11 @@
                 </p>
                 <p>The function hall within the South Quarter Dome. The ideal venue for<br />
                     business meetings, workshops, conferences, and even weddings.
+                </p>
+                <p class="pt-4">Details&nbsp<a href="#">
+                        <img src="{{ asset('images/bnw/portfolio/bnw-web-portfolio-detail-icon.png') }}" alt="IMG"
+                            style="width:25px; top:" class="img-fluid">
+                    </a>
                 </p>
             </div>
         </div>
@@ -99,6 +119,30 @@
                 </p>
                 <p>Mirco-city development project in Batam — neighbor of Singapore,<br />
                     only 20 km away.
+                </p>
+                <p class="pt-4">Details&nbsp<a href="#">
+                        <img src="{{ asset('images/bnw/portfolio/bnw-web-portfolio-detail-icon.png') }}" alt="IMG"
+                            style="width:25px; top:" class="img-fluid">
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="row pb-3">
+            <div class="col-md-6">
+                <img src="{{ asset('images/bnw/portfolio/6-bnw-web-portfolio-lavaya-thumb.jpg') }}"
+                    class="img-portfolio">
+            </div>
+            <div class="col-md-6 padding-portfolio">
+                <p class="t1-b-1 custom-font-playfair-displayregular mb-3 txt-header-contact">
+                    Lavaya
+                </p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut asperiores<br />
+                    laboriosam natus sit eum accusamus.
+                </p>
+                <p class="pt-4">Details&nbsp<a href="#">
+                        <img src="{{ asset('images/bnw/portfolio/bnw-web-portfolio-detail-icon.png') }}" alt="IMG"
+                            style="width:25px; top:" class="img-fluid">
+                    </a>
                 </p>
             </div>
         </div>
