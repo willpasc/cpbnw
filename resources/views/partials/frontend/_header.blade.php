@@ -92,7 +92,7 @@
                     <ul class="main-menu respon-sub-menu" style="margin-right:100px !important">
                         <li class="custom-border-left"></li>
                         <li>
-                            <a class="custom-font-avenir-light menu-font-style text-white"
+                            <a class="custom-font-acaslon-regular menu-font-style text-white"
                                 href="{{ route('frontend.about') }}">
                                 <div class="text-white">
                                     <p class=" font-header-menu">About Us</p>
@@ -102,7 +102,7 @@
                         </li>
                         <li class="custom-border-left ml-5"></li>
                         <li>
-                            <a class="custom-font-avenir-light menu-font-style text-white"
+                            <a class="custom-font-acaslon-regular menu-font-style text-white"
                                 href="{{ route('frontend.services') }}">
                                 <div class="text-white">
                                     <p class=" font-header-menu">Our Services</p>
@@ -112,7 +112,7 @@
                         </li>
                         <li class="custom-border-left ml-5"></li>
                         <li>
-                            <a class="custom-font-avenir-light menu-font-style text-white"
+                            <a class="custom-font-acaslon-regular menu-font-style text-white"
                                 href="{{ route('frontend.portfolio') }}">
                                 <div class="text-white">
                                     <p class=" font-header-menu">Our Portfolios</p>
@@ -122,7 +122,7 @@
                         </li>
                         <li class="custom-border-left ml-5"></li>
                         <li>
-                            <a class="custom-font-avenir-light menu-font-style text-white"
+                            <a class="custom-font-acaslon-regular menu-font-style text-white"
                                 href="{{ route('frontend.contact') }}">
                                 <div class="text-white">
                                     <p class=" font-header-menu">Contacts</p>

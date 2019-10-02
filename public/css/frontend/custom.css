@@ -1,3 +1,7 @@
+.custom-line-height{
+    line-height: 2em;
+}
+
 .gold {
     color: #d1ac60 !important;
 }
@@ -39,7 +43,7 @@
 }
 
 .font-header-submenu {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .bottom-line-white {

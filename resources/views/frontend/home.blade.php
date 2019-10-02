@@ -15,16 +15,16 @@
         <div class=" w-100 header-img" style="background-image: url('{{ asset('images/bnw/home/bnw-web-home-header.jpg') }}');
                 background-repeat: no-repeat;
                 background-position: center;
-                background-size: contain;">
+                background-size: cover;">
             <div class="container">
                 <div class="row" style="padding-top:10%;">
                     <div class="col-md-6 text-white h-100 d-flex justify-content-center flex-column">
-                        <p class="t1-b-1 custom-font-playfair-displayregular mb-3 txt-header-contact">
+                        <p class="custom-font-avenir-black mb-3 txt-header-main mb-3">
                             HELLO THERE
                         </p>
-                        <p>A bit of small talk, something really general to bridge</p>
-                        <p>an introduction to Ben & Wyatt. Needs just around</p>
-                        <p>this much of texts.</p>
+                        <p class="custom-font-avenir-light custom-line-height">A bit of small talk, something really general to bridge<br/>
+                        an introduction to Ben & Wyatt. Needs just around<br/>
+                        this much of texts.</p>
                     </div>
                     <div class="col-md-6"></div>
                 </div>
@@ -36,20 +36,48 @@
 <section class="p-tb-100" style="background-color: rgb(26,30,40);">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 text-white">
-                <p class="t1-b-1 custom-font-playfair-displayregular mb-3 txt-header-contact">Be Proud.
+            <div class="col-md-3 col-12 text-white pt-4">
+                <p class="t1-b-1 custom-font-acaslon-regular mb-3 txt-header-contact">Be Proud.
                 </p>
-                <p class="pb-3">
+                <p class="pb-3 custom-font-avenir-medium custom-line-height">
                     A brief description on how Ben & Wyatt
                     can help you and your business venture
                     grow. About BNW can help you become
                     a proud founder of your own business.
                 </p>
-                <p>
+                <p class="custom-font-avenir-medium custom-line-height">
                     Something around to fill this area, needs
                     about 2 paragraphs like this. Here’s some
                     of our recent works.
                 </p>
+            </div>
+            <div class="col-md-9 col-12">
+                <div class="scrolling-wrapper-flexbox">
+                    <div class="card-box">
+                        <img src="{{ asset('images/bnw/home/thumbnail_portfolio_1.jpg') }}"/>
+                    </div>
+                    <div class="card-box">
+                        <img src="{{ asset('images/bnw/home/thumbnail_portfolio_2.jpg') }}"/>
+                    </div>
+                    <div class="card-box">
+                        <img src="{{ asset('images/bnw/home/thumbnail_portfolio_3.jpg') }}"/>
+                    </div>
+                    <div class="card-box">
+                        <img src="{{ asset('images/bnw/home/thumbnail_portfolio_4.jpg') }}"/>
+                    </div>
+                    <div class="card-box">
+                        <div style="height: 340px; width: 150px;">
+                            <div class="text-white h-100 d-flex justify-content-center flex-column">
+                                <div class="w-100 text-center">
+                                    <span>View More</span>
+                                    <br/>
+                                    <br>
+                                    <img src="{{ asset('images/bnw/home/thumbnail_portfolio_viewmore.png') }}" style="width: 75px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -113,10 +141,52 @@
         width: 75% !important;
     }
 
+    .txt-header-main {
+        font-size: 50px;
+    }
+
     .txt-header-contact {
         font-size: 30px;
         text-align: center;
         margin-bottom: 50px;
+    }
+
+    .scrolling-wrapper-flexbox {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 25px;
+    }
+
+    .card-box {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        flex: 0 0 auto;
+        padding: 0 5px;
+    }
+
+    .card-box img{
+        width: 230px;
+        height: auto;
+    }
+
+    .scrolling-wrapper-flexbox::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+
+    .scrolling-wrapper-flexbox::-webkit-scrollbar:vertical {
+        width: 5px;
+    }
+
+    .scrolling-wrapper-flexbox::-webkit-scrollbar:horizontal {
+        height: 5px;
+    }
+
+    .scrolling-wrapper-flexbox::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        border: 1px solid white; /* should match background, can't be transparent */
+        background-color: #fff;
     }
 
     @media (min-width: 576px) {}
