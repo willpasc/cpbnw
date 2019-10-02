@@ -77,34 +77,57 @@
 
     <!-- Header desktop STICKY -->
     <nav class="container-header-desktop" id="header-sticky">
-        <div class="wrap-menu-desktop" style="background-color: rgba(0,0,0,1) !important;">
+        <div class="wrap-menu-desktop" style="background-color: rgba(26,30,40,1) !important;">
             <div class="limiter-menu-desktop container-fluid">
                 <!-- Logo desktop -->
                 <div class="logo">
                     <a href="{{ route('home') }}">
-                        <img src="{{ asset('images/escalier/logo-escalier-header-trans.png') }}" alt="LOGO"
-                             class="ml-md-5"
-                            style="width: 150px; height: auto;">
+                        <img src="{{ asset('images/bnw/bnw-web-logo.png') }}" alt="LOGO" class="ml-md-5"
+                            style="width: 300px; height: auto;">
                     </a>
                 </div>
 
                 <!-- Menu desktop -->
                 <div class="menu-desktop">
                     <ul class="main-menu respon-sub-menu" style="margin-right:100px !important">
+                        <li class="custom-border-left"></li>
                         <li>
-                            <a class="custom-font-avenir-light menu-font-style text-white" href="{{ route('home') }}">
-                                <div class="text-white">HOME</div>
+                            <a class="custom-font-avenir-light menu-font-style text-white"
+                                href="{{ route('frontend.about') }}">
+                                <div class="text-white">
+                                    <p class=" font-header-menu">About Us</p>
+                                    <p class="font-header-submenu">allow us to introduce <br />ourselves</p>
+                                </div>
                             </a>
                         </li>
-                        <li class="ml-5">
+                        <li class="custom-border-left ml-5"></li>
+                        <li>
+                            <a class="custom-font-avenir-light menu-font-style text-white"
+                                href="{{ route('frontend.services') }}">
+                                <div class="text-white">
+                                    <p class=" font-header-menu">Our Services</p>
+                                    <p class="font-header-submenu">what we can help <br />you with</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="custom-border-left ml-5"></li>
+                        <li>
                             <a class="custom-font-avenir-light menu-font-style text-white"
                                 href="{{ route('frontend.portfolio') }}">
-                                <div class="text-white">PORTFOLIO</div>
+                                <div class="text-white">
+                                    <p class=" font-header-menu">Our Portfolios</p>
+                                    <p class="font-header-submenu">overview our recent <br />works</p>
+                                </div>
                             </a>
                         </li>
-                        <li class="ml-5">
-                            <a class="custom-font-avenir-light menu-font-style text-white" href="{{ route('frontend.contact') }}">
-                                <div class="text-white">CONTACT US</div>
+                        <li class="custom-border-left ml-5"></li>
+                        <li>
+                            <a class="custom-font-avenir-light menu-font-style text-white"
+                                href="{{ route('frontend.contact') }}">
+                                <div class="text-white">
+                                    <p class=" font-header-menu">Contacts</p>
+                                    <p class="font-header-submenu">let's talk and be a <br />proud founder</p>
+                                </div>
                             </a>
                         </li>
                         <li>
@@ -143,7 +166,8 @@
                 </li>
 
                 <li>
-                    <a class="custom-font-avenir-light text-white" href="{{ route('frontend.portfolio') }}">PORTFOLIO</a>
+                    <a class="custom-font-avenir-light text-white"
+                        href="{{ route('frontend.portfolio') }}">PORTFOLIO</a>
                 </li>
 
                 <li>

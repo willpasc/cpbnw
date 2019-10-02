@@ -1,71 +1,62 @@
 @extends('layouts.frontend')
 
 @section('head_and_title')
-<meta name="description" content="Escalier Contact Us">
+<meta name="description" content="BNW Contact Us">
 <meta name="author" content="PT. Generasi Muda Gigih">
-<meta name="keywords" content="Escalier, Interior, Office, Residential, Apartment, Commercial, Spaces">
+<meta name="keywords" content="Ben and Wyatt, Interior, Office, Residential, Apartment, Commercial, Spaces">
 
-<title>ESCALIER - CONTACT US</title>
+<title>BNW - CONTACTS</title>
 @endsection
 
 @section('content')
-
-<section>
-    <div class="row no-gutters" style="margin-top:-5%;">
-        <div class="col-12">
-            <div class=" w-100 header-img" style="background-image: url('{{ asset('images/escalier/contact/header-contact-us.jpg') }}');
+<div class="row no-gutters">
+    <div class="col-12">
+        <div class=" w-100 header-img" style="background-image: url('{{ asset('images/bnw/contacts/bnw-web-contact-header.png') }}');
                 background-repeat: no-repeat;
                 background-position: center;
-                background-size: cover;">
+                background-size: contain;">
+            <div class="container">
+                <div class="row" style="padding-top:10%;">
+                    <div class="col-md-6 text-white h-100 d-flex justify-content-center flex-column">
+                        <p class="t1-b-1 custom-font-playfair-displayregular mb-3 txt-header-contact">
+                            Contacts
+                        </p>
+                        <p>Let's have a chat or even a visit.</p>
+                        <p>Be a proud founder.</p>
+                    </div>
+                    <div class="col-md-6"></div>
+                </div>
             </div>
         </div>
     </div>
-</section>
+</div>
 
-<section class="mt-5 mb-5">
+<section class="py-5" style="background-color: #121213">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 col-12">
-                <p class="t1-b-1 custom-font-playfair-displayregular text-dark mb-5 txt-header-contact">CONTACT US</p>
+            <div class="col-md-6 col-12 text-white">
+                <p class="t1-b-1 custom-font-playfair-displayregular mb-5 txt-header-contact">Let's Talk
+                </p>
+                <p>Let’s have a chat, if you’re interested in what we do and what we’ve done.</p>
+                <p class="mb-5">For inquiries, info, requests et cetera, please contact us through:</p>
+
+                <p><span class="font-weight-bold">P</span>&nbsp;&nbsp;&nbsp;+62 822 9982 3888</p>
+                <p><span class="font-weight-bold">E</span>&nbsp;&nbsp;&nbsp;info@benandwyatt.com</p>
+                <p class="mb-5"><span class="font-weight-bold">I</span>&nbsp;&nbsp;&nbsp;&nbsp;benandwyatt</p>
+                <p>Brooklyn Alam Sutera</p>
+                <p>Soho Tower A, 5th Floor</p>
+                <p>A/05/C - A/05/D</p>
             </div>
-            <div class="col-md-8"></div>
-        </div>
-        <div class="row mb-3">
-            <div class="col-md-4 col-12 mb-4 mb-md-0">
-                <p class="custom-font-avenir-medium text-dark pb-4 txt-subheader-contact">Head Office</p>
-                <p class="custom-font-avenir-light">RJS 29 C No. 3 Dynasty Walk<br />
-                    Alam Sutera Tangerang, Banten</p>
-            </div>
-            <div class="col-md-4 col-12">
-                <p class="custom-font-avenir-medium text-dark pb-4 txt-subheader-contact">Workshop</p>
-                <p class="custom-font-avenir-light">Workshop Kawasan Industri Agarindo No. 168<br />
-                    Ds Bunder Cikupa Pasar Kemis Kec. Tangerang,<br />
-                    Banten 15710</p>
-            </div>
-            <div class="col-md-4"></div>
-        </div>
-        <div class="row mb-4">
-            <div class="col-md-4">
-                <p class="custom-font-avenir-light">@escalierinterior</p>
-                <div class="col-md-8"></div>
+            <div class="col-md-6 text-white">
+                <p class="t1-b-1 custom-font-playfair-displayregular mb-5 txt-header-contact">Find Us</p>
+                <img src="{{ asset('images/bnw/contacts/bnw-web-contact-map.jpg') }}" class="img-contact">
             </div>
         </div>
-        <div class="row mb-3">
-            <div class="col-md-4 col-12">
-                <p class="custom-font-avenir-light">escalier-studio.com<br />
-                    info@escalierstudio.com<br />
-                    0878 8767 6300<br />
-            </div>
-            <div class="col-md-8"></div>
-        </div>
-    </div>
 </section>
 @endsection
-
 @section('styles')
 <style>
-
-    .txt-subheader-contact{
+    .txt-subheader-contact {
         font-size: 18px;
     }
 
@@ -82,6 +73,14 @@
     @media (min-width: 576px) {}
 
     @media (min-width: 768px) {
+        .img-contact {
+            max-width: 550px;
+        }
+
+        .header-img {
+            min-height: 361px !important;
+        }
+
         .btn-paulmarc-more .w-25 {
             width: 25% !important;
         }
