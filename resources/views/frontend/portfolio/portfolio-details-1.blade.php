@@ -16,16 +16,18 @@
             <div class="col-md-6 col-12">
                 <p class="t1-b-1 custom-font-acaslon-regular mb-4 txt-header-contact">Triniti Land
                 </p>
-                <p>Pioneered in 2009, now Triniti Land has become one of the leading property enterprise
+                <p class="custom-font-avenir-medium text-md-left text-center">Pioneered in 2009, now Triniti Land has
+                    become one of the leading
+                    property enterprise
                     in Indonesia. Not only mere property, Trinity tries to share it’s values. In order to engrave
                     such things in people’s memory, the company needed a powerful visual que — a whole
                     new visual identity.</p>
             </div>
-            <div class="col-md-2 p-l-70">
+            <div class="col-md-2 text-md-left text-center portfolio-detail">
                 <p class="custom-font-acaslon-regular txt-portfolio-details pt-4">Client</p>
                 <p>Trinity Land</p>
             </div>
-            <div class="col-md-4 p-l-70">
+            <div class="col-md-4 text-md-left text-center portfolio-detail">
                 <p class="custom-font-acaslon-regular txt-portfolio-details pt-4">Brief</p>
                 <p>To create the visual identity for Triniti Land.<br />
                     Includes: logo, company profile, website.</p>
@@ -46,6 +48,10 @@
 @endsection
 @section('styles')
 <style>
+    .img-portfolio {
+        width: 100%;
+    }
+
     .txt-subheader-contact {
         font-size: 18px;
     }
@@ -69,6 +75,11 @@
     @media (min-width: 576px) {}
 
     @media (min-width: 768px) {
+
+        .portfolio-detail {
+            padding-left: 70px;
+        }
+
         .img-about {
             max-width: 550px;
         }

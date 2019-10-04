@@ -1,4 +1,4 @@
-.custom-line-height{
+.custom-line-height {
     line-height: 2em;
 }
 
@@ -8,6 +8,11 @@
 
 .white {
     color: #fff;
+}
+
+.footer-padding {
+    padding-left: 30%;
+
 }
 
 .bg-custom-dark {
@@ -139,6 +144,11 @@
     .workshop-footer {
         padding-top: 3rem;
         margin-top: 1rem;
+    }
+
+    .footer-padding {
+        padding-left: 0%;
+
     }
 
     .copyright {

@@ -36,20 +36,27 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-12 text-white pb-5">
-                <p class="t1-b-1 custom-font-playfair-displayregular mb-5 txt-header-contact">Let's Talk
+                <p class="custom-font-avenir-medium mb-5 txt-header-contact">Let's Talk
                 </p>
-                <p>Let’s have a chat, if you’re interested in what we do and what we’ve done.</p>
-                <p class="mb-5">For inquiries, info, requests et cetera, please contact us through:</p>
+                <p class="custom-font-avenir-medium">Let’s have a chat, if you’re interested in what we do and what
+                    we’ve done.</p>
+                <p class="mb-5 custom-font-avenir-medium">For inquiries, info, requests et cetera, please contact us
+                    through:</p>
 
-                <p><span class="font-weight-bold">P</span>&nbsp;&nbsp;&nbsp;+62 822 9982 3888</p>
-                <p><span class="font-weight-bold">E</span>&nbsp;&nbsp;&nbsp;info@benandwyatt.com</p>
-                <p class="mb-5"><span class="font-weight-bold">I</span>&nbsp;&nbsp;&nbsp;&nbsp;benandwyatt</p>
-                <p>Brooklyn Alam Sutera</p>
-                <p>Soho Tower A, 5th Floor</p>
-                <p>A/05/C - A/05/D</p>
+                <p class="custom-font-avenir-medium"><span
+                        class="font-weight-bold custom-font-avenir-medium">P</span>&nbsp;&nbsp;&nbsp;+62 822 9982 3888
+                </p>
+                <p class="custom-font-avenir-medium"><span
+                        class="font-weight-bold custom-font-avenir-medium">E</span>&nbsp;&nbsp;&nbsp;info@benandwyatt.com
+                </p>
+                <p class="mb-5"><span class="font-weight-bold">I</span
+                        class="custom-font-avenir-medium">&nbsp;&nbsp;&nbsp;&nbsp;benandwyatt</p>
+                <p class="custom-font-avenir-medium">Brooklyn Alam Sutera</p>
+                <p class="custom-font-avenir-medium">Soho Tower A, 5th Floor</p>
+                <p class="custom-font-avenir-medium">A/05/C - A/05/D</p>
             </div>
             <div class="col-md-6 text-white">
-                <p class="t1-b-1 custom-font-playfair-displayregular mb-5 txt-header-contact">Find Us</p>
+                <p class="custom-font-acaslon-regular mb-5 txt-header-contact">Find Us</p>
                 <img src="{{ asset('images/bnw/contacts/bnw-web-contact-map.jpg') }}" class="img-contact">
             </div>
         </div>

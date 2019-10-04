@@ -91,78 +91,95 @@
     <div class="container">
         <div class="row pb-5">
             <div class="col-12 text-white text-md-left text-center">
-                <p class="t1-b-1 custom-font-playfair-displayregular mb-2 txt-header-contact">Our Services
+                <p class="t1-b-1 custom-font-acaslon-regular mb-2 txt-header-contact">Our Services
                 </p>
-                <p>As a creative house, we can help you as:</p>
+                <p class="custom-font-avenir-medium">As a creative house, we can help you as:</p>
             </div>
         </div>
         <div class="row text-white mb-3 text-md-left text-center">
+            <div class="col-md-4 col-12 pb-5">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="{{ asset('images/bnw/services/bnw-web-services-design.jpg') }}"
+                            class="img-services mb-3">
+                        <p class="t1-m-4 custom-font-acaslon-regular mb-2 txt-header-contact">Designers</p>
+                        <p class="custom-font-avenir-medium">We help our clients communicate their ideas,<br />
+                            project a great impression of their brand.<br />
+                            Make them look good and recognizable.</p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12 dropdown-services">
+                        <img src="{{ asset('images/bnw/services/bnw-web-services-dropdown-1.png') }}"
+                            class="float-left dropdown-height">
+                        <div class="float-left text-left">
+                            <p class="mb-3 mt-2 custom-font-avenir-medium">Details</p>
+                            <p class="custom-line-height custom-font-avenir-medium">Company Logo<br />
+                                Brand Guideline<br />
+                                Corporate Stationery<br />
+                                Marketing Collaterals<br />
+                                Company Profile Design<br />
+                                Online Marketing Tools<br />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12 pb-5">
+                <div class="row">
+                    <div class="col-12 ">
+                        <img src="{{ asset('images/bnw/services/bnw-web-services-design.jpg') }}"
+                            class="img-services mb-3">
+                        <p class="t1-m-4 custom-font-acaslon-regular mb-2 txt-header-contact">Visual Strategist</p>
+                        <p class="custom-font-avenir-medium">We help our clients discover unique way to project<br />
+                            their strengths and ensuring relevance of all tools.<br />
+                            Make them stand out and consistent.</p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12 dropdown-services">
+                        <img src="{{ asset('images/bnw/services/bnw-web-services-dropdown-1.png') }}"
+                            class="float-left dropdown-height">
+                        <div class="float-left text-left">
+                            <p class="mb-3 mt-2 custom-font-avenir-medium">Details</p>
+                            <p class="custom-line-height custom-font-avenir-medium">Project Naming<br />
+                                Video Storyline<br />
+                                Brand Personality<br />
+                                Website Development<br />
+                                Social Media Management<br />
+                                Paid Internet Advertising<br />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-4 col-12">
-                <div>
-                    <img src="{{ asset('images/bnw/services/bnw-web-services-design.jpg') }}" class="img-services mb-3">
-                    <p class="t1-m-4 custom-font-playfair-displayregular mb-2 txt-header-contact">Designers</p>
-                    <p>We help our clients communicate their ideas,<br /></p>
-                    <p>project a great impression of their brand.<br /></p>
-                    <p>Make them look good and recognizable.</p>
+                <div class="row">
+                    <div class="col-12">
+                        <img src="{{ asset('images/bnw/services/bnw-web-services-design.jpg') }}"
+                            class="img-services mb-3">
+                        <p class="t1-m-4 custom-font-acaslon-regular mb-2 txt-header-contact">Copywriters</p>
+                        <p class="custom-font-avenir-medium">We help our clients pass on their key messages,<br />
+                            summon
+                            positive feelings. Make them sound professional and
+                            promising.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4 col-12 text-md-left text-center">
-                <img src="{{ asset('images/bnw/services/bnw-web-services-vstrategist.jpg') }}"
-                    class="img-services mb-3">
-                <p class="t1-m-4 custom-font-playfair-displayregular mb-2 txt-header-contact">Visual Strategist</p>
-                <p>We help our clients discover unique way to project<br /></p>
-                <p>their strengths and ensuring relevance of all tools.<br /></p>
-                <p>Make them stand out and consistent.</p>
-            </div>
-            <div class="col-md-4 col-12 text-md-left text-center">
-                <img src="{{ asset('images/bnw/services/bnw-web-services-copywriters.jpg') }}"
-                    class="img-services mb-3">
-                <p class="t1-m-4 custom-font-playfair-displayregular mb-2 txt-header-contact">Copywriters</p>
-                <p>We help our clients pass on their key messages,<br /></p>
-                <p>summon positive feelings. Make them sound<br /> </p>
-                <p>professional and promising.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div></div>
-            <div class="col-md-1 col-12"><img
-                    src="{{ asset('images/bnw/services/bnw-web-services-dropdown-1.png') }}"><br />
-
-                <div class="col-md-3 text-white m-l--45">
-                    <p class="mb-3 mt-2">Details</p>
-                    <p class="custom-line-height">Company Logo<br />
-                        Brand Guideline<br />
-                        Corporate Stationery<br />
-                        Marketing Collaterals<br />
-                        Company Profile Design<br />
-                        Online Marketing Tools<br />
-                    </p>
-                </div>
-                <div class="col-md-1"><img
-                        src="{{ asset('images/bnw/services/bnw-web-services-dropdown-1.png') }}"><br />
-                </div>
-                <div class="col-md-3 text-white m-l--45">
-                    <p class="mb-3 mt-2">Details</p>
-                    <p class="custom-line-height">Company Logo<br />
-                        Brand Guideline<br />
-                        Corporate Stationery<br />
-                        Marketing Collaterals<br />
-                        Company Profile Design<br />
-                        Online Marketing Tools<br />
-                    </p>
-                </div>
-                <div class="col-md-1"><img
-                        src="{{ asset('images/bnw/services/bnw-web-services-dropdown-1.png') }}"><br />
-                </div>
-                <div class="col-md-3 text-white m-l--45">
-                    <p class="mb-3 mt-2">Details</p>
-                    <p class="custom-line-height">Company Logo<br />
-                        Brand Guideline<br />
-                        Corporate Stationery<br />
-                        Marketing Collaterals<br />
-                        Company Profile Design<br />
-                        Online Marketing Tools<br />
-                    </p>
+                <div class="row mt-3">
+                    <div class="col-12 dropdown-services">
+                        <img src="{{ asset('images/bnw/services/bnw-web-services-dropdown-1.png') }}"
+                            class="float-left dropdown-height">
+                        <div class="float-left text-left">
+                            <p class="mb-3 mt-2 custom-font-avenir-medium">Details</p>
+                            <p class="custom-line-height custom-font-avenir-medium">Company & Product Story<br />
+                                Vision & Mission Statement<br />
+                                Core Values<br />
+                                Product Description<br />
+                                Company Profile<br />
+                                Marketing Content<br />
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -245,6 +262,14 @@
 @endsection
 @section('styles')
 <style>
+    .dropdown-services {
+        padding-left: 80px;
+    }
+
+    .dropdown-height {
+        height: 260px;
+    }
+
     .txt-subheader-contact {
         font-size: 18px;
     }
@@ -322,6 +347,11 @@
     @media (min-width: 576px) {}
 
     @media (min-width: 768px) {
+
+        .dropdown-services {
+            padding-left: 0px;
+        }
+
         .img-services {
             width: 390px;
         }

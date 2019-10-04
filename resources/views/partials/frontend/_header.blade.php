@@ -103,7 +103,7 @@
                         <li class="custom-border-left ml-5"></li>
                         <li>
                             <a class="custom-font-acaslon-regular menu-font-style text-white"
-                                href="{{ route('frontend.services') }}">
+                                href="{{ route('home') }}">
                                 <div class="text-white">
                                     <p class=" font-header-menu">Our Services</p>
                                     <p class="font-header-submenu">what we can help <br />you with</p>
@@ -165,7 +165,7 @@
                 </li>
 
                 <li>
-                    <a class="custom-font-avenir-light text-white" href="{{ route('frontend.services') }}">Our
+                    <a class="custom-font-avenir-light text-white" href="{{ route('home') }}">Our
                         Services</a>
                 </li>
 
