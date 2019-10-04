@@ -17,14 +17,14 @@
                 background-position: center;
                 background-size: cover;">
             <div class="container">
-                <div class="row" style="padding-top:10%;">
+                <div class="row txt-banner-spacing">
                     <div class="col-md-6 text-white h-100 d-flex justify-content-center flex-column">
                         <p class="t1-b-1 custom-font-playfair-displayregular mb-3 txt-header-contact">
                             Our Portfolios
                         </p>
-                        <p>Something brief to describe our (recent) works in</p>
-                        <p>Ben & Wyatt. We strive to deliver the best</p>
-                        <p>exceptional outcomes.</p>
+                        <p class=" d-none d-md-block">Something brief to describe our (recent) works in<br />
+                            Ben & Wyatt. We strive to deliver the best<br />
+                            exceptional outcomes.</p>
                     </div>
                     <div class="col-md-6"></div>
                 </div>
@@ -44,9 +44,13 @@
                 <p class="t1-b-1 custom-font-playfair-displayregular mb-3 txt-header-contact">
                     Triniti Land
                 </p>
-                <p>One of the leading property enterprise in Indonesia. We helped creating<br />
+                <p class=" d-none d-md-block">One of the leading property enterprise in Indonesia. We helped
+                    creating<br />
                     the visual identity — logo, company profile, website, and more.</p>
-                <p class="pt-4">Details&nbsp<a href="#">
+                <p class=" d-block d-md-none text-center">One of the leading property enterprise in Indonesia. We helped
+                    creating
+                    the visual identity — logo, company profile, website, and more.</p>
+                <p class="py-4">Details&nbsp<a href="{{ route('frontend.portfolio.portfolio-details-1') }}">
                         <img src="{{ asset('images/bnw/portfolio/bnw-web-portfolio-detail-icon.png') }}" alt="IMG"
                             style="width:25px; top:" class="img-fluid">
                     </a>
@@ -61,10 +65,14 @@
                 <p class="t1-b-1 custom-font-playfair-displayregular mb-3 txt-header-contact">
                     Thirty One Sudirman Suites
                 </p>
-                <p>Visual identity for a new prestegious apartment in Makassar, which<br />
+                <p class=" d-none d-md-block">Visual identity for a new prestegious apartment in Makassar, which<br />
                     includes: logo, catalogue, website, collaterals, and more.
                 </p>
-                <p class="pt-4">Details&nbsp<a href="#">
+                <p class=" d-block d-md-none text-center">Visual identity for a new prestegious apartment in Makassar,
+                    which
+                    includes: logo, catalogue, website, collaterals, and more.
+                </p>
+                <p class="py-4">Details&nbsp<a href="#">
                         <img src="{{ asset('images/bnw/portfolio/bnw-web-portfolio-detail-icon.png') }}" alt="IMG"
                             style="width:25px; top:" class="img-fluid">
                     </a>
@@ -72,7 +80,7 @@
             </div>
         </div>
         <div class="row pb-3">
-            <div class="col-md-6">
+            <div class="col-md-6 col-12">
                 <img src="{{ asset('images/bnw/portfolio/3-bnw-web-portfolio-10lbtriniti-thumb.jpg') }}"
                     class="img-portfolio">
             </div>
@@ -80,10 +88,15 @@
                 <p class="t1-b-1 custom-font-playfair-displayregular mb-3 txt-header-contact">
                     10 Langkah Besar – Triniti Land
                 </p>
-                <p>Triniti Land is having it’s 10th anniversary themed “10 Langkah Besar.”<br />
+                <p class=" d-none d-md-block">Triniti Land is having it’s 10th anniversary themed “10 Langkah
+                    Besar.”<br />
                     Hence creating a whole campaign: logo, website, and other collaterals.
                 </p>
-                <p class="pt-4">Details&nbsp<a href="#">
+                <p class=" d-block d-md-none text-center">Triniti Land is having it’s 10th anniversary themed “10
+                    Langkah Besar.”
+                    Hence creating a whole campaign: logo, website, and other collaterals.
+                </p>
+                <p class="py-4">Details&nbsp<a href="#">
                         <img src="{{ asset('images/bnw/portfolio/bnw-web-portfolio-detail-icon.png') }}" alt="IMG"
                             style="width:25px; top:" class="img-fluid">
                     </a>
@@ -91,17 +104,21 @@
             </div>
         </div>
         <div class="row pb-3">
-            <div class="col-md-6">
+            <div class="col-md-6 col-12">
                 <img src="{{ asset('images/bnw/portfolio/4-bnw-web-portfolio-sq1-thumb.jpg') }}" class="img-portfolio">
             </div>
             <div class="col-md-6 padding-portfolio">
                 <p class="t1-b-1 custom-font-playfair-displayregular mb-3 txt-header-contact">
                     Square One
                 </p>
-                <p>The function hall within the South Quarter Dome. The ideal venue for<br />
+                <p class=" d-none d-md-block">The function hall within the South Quarter Dome. The ideal venue for<br />
                     business meetings, workshops, conferences, and even weddings.
                 </p>
-                <p class="pt-4">Details&nbsp<a href="#">
+                <p class=" d-block d-md-none text-center">The function hall within the South Quarter Dome. The ideal
+                    venue for
+                    business meetings, workshops, conferences, and even weddings.
+                </p>
+                <p class="py-4">Details&nbsp<a href="#">
                         <img src="{{ asset('images/bnw/portfolio/bnw-web-portfolio-detail-icon.png') }}" alt="IMG"
                             style="width:25px; top:" class="img-fluid">
                     </a>
@@ -109,7 +126,7 @@
             </div>
         </div>
         <div class="row pb-3">
-            <div class="col-md-6">
+            <div class="col-md-6 col-12">
                 <img src="{{ asset('images/bnw/portfolio/5-bnw-web-portfolio-marcsblvd-thumb.jpg') }}"
                     class="img-portfolio">
             </div>
@@ -117,18 +134,22 @@
                 <p class="t1-b-1 custom-font-playfair-displayregular mb-3 txt-header-contact">
                     Marc’s Boulevard
                 </p>
-                <p>Mirco-city development project in Batam — neighbor of Singapore,<br />
+                <p class=" d-none d-md-block">Mirco-city development project in Batam — neighbor of Singapore,<br />
                     only 20 km away.
                 </p>
-                <p class="pt-4">Details&nbsp<a href="#">
+                <p class=" d-block d-md-none text-center">Mirco-city development project in Batam — neighbor of
+                    Singapore,
+                    only 20 km away.
+                </p>
+                <p class="py-4">Details&nbsp<a href="#">
                         <img src="{{ asset('images/bnw/portfolio/bnw-web-portfolio-detail-icon.png') }}" alt="IMG"
                             style="width:25px; top:" class="img-fluid">
                     </a>
                 </p>
             </div>
         </div>
-        <div class="row pb-3">
-            <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-6 col-12">
                 <img src="{{ asset('images/bnw/portfolio/6-bnw-web-portfolio-lavaya-thumb.jpg') }}"
                     class="img-portfolio">
             </div>
@@ -136,10 +157,15 @@
                 <p class="t1-b-1 custom-font-playfair-displayregular mb-3 txt-header-contact">
                     Lavaya
                 </p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut asperiores<br />
+                <p class=" d-none d-md-block">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+                    asperiores<br />
                     laboriosam natus sit eum accusamus.
                 </p>
-                <p class="pt-4">Details&nbsp<a href="#">
+                <p class=" d-block d-md-none text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+                    asperiores
+                    laboriosam natus sit eum accusamus.
+                </p>
+                <p class="py-4">Details&nbsp<a href="#">
                         <img src="{{ asset('images/bnw/portfolio/bnw-web-portfolio-detail-icon.png') }}" alt="IMG"
                             style="width:25px; top:" class="img-fluid">
                     </a>
@@ -165,6 +191,15 @@
         margin-bottom: 50px;
     }
 
+    .txt-banner-spacing {
+        padding-top: 15%;
+    }
+
+    .img-portfolio {
+        /* width: 600px; */
+        width: 100%;
+    }
+
     @media (min-width: 576px) {}
 
     @media (min-width: 768px) {
@@ -176,8 +211,13 @@
             width: 100px;
         }
 
+        .txt-banner-spacing {
+            padding-top: 10%;
+        }
+
         .img-portfolio {
-            width: 600px;
+            /* width: 600px; */
+            width: 100%;
         }
 
         .padding-portfolio {

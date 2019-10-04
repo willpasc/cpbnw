@@ -17,14 +17,16 @@
                 background-position: center;
                 background-size: cover;">
             <div class="container">
-                <div class="row" style="padding-top:10%;">
+                <div class="row txt-banner-spacing">
                     <div class="col-md-6 text-white h-100 d-flex justify-content-center flex-column">
-                        <p class="custom-font-avenir-black mb-3 txt-header-main mb-3">
+                        <p class="custom-font-avenir-black mb-3 txt-header-main">
                             HELLO THERE
                         </p>
-                        <p class="custom-font-avenir-light custom-line-height">A bit of small talk, something really general to bridge<br/>
-                        an introduction to Ben & Wyatt. Needs just around<br/>
-                        this much of texts.</p>
+                        <p class="custom-font-avenir-light custom-line-height d-none d-md-block">A bit of small talk,
+                            something really
+                            general to bridge<br />
+                            an introduction to Ben & Wyatt. Needs just around<br />
+                            this much of texts.</p>
                     </div>
                     <div class="col-md-6"></div>
                 </div>
@@ -33,7 +35,7 @@
     </div>
 </div>
 
-<section class="p-tb-100" style="background-color: rgb(26,30,40);">
+<section class="spacing-home-1" style="background-color: rgb(26,30,40);">
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-12 text-white pt-4">
@@ -54,25 +56,27 @@
             <div class="col-md-9 col-12">
                 <div class="scrolling-wrapper-flexbox">
                     <div class="card-box">
-                        <img src="{{ asset('images/bnw/home/thumbnail_portfolio_1.jpg') }}"/>
+                        <img src="{{ asset('images/bnw/home/thumbnail_portfolio_1.jpg') }}" />
                     </div>
                     <div class="card-box">
-                        <img src="{{ asset('images/bnw/home/thumbnail_portfolio_2.jpg') }}"/>
+                        <img src="{{ asset('images/bnw/home/thumbnail_portfolio_2.jpg') }}" />
                     </div>
                     <div class="card-box">
-                        <img src="{{ asset('images/bnw/home/thumbnail_portfolio_3.jpg') }}"/>
+                        <img src="{{ asset('images/bnw/home/thumbnail_portfolio_3.jpg') }}" />
                     </div>
                     <div class="card-box">
-                        <img src="{{ asset('images/bnw/home/thumbnail_portfolio_4.jpg') }}"/>
+                        <img src="{{ asset('images/bnw/home/thumbnail_portfolio_4.jpg') }}" />
                     </div>
                     <div class="card-box">
                         <div style="height: 340px; width: 150px;">
                             <div class="text-white h-100 d-flex justify-content-center flex-column">
                                 <div class="w-100 text-center">
-                                    <span>View More</span>
-                                    <br/>
-                                    <br>
-                                    <img src="{{ asset('images/bnw/home/thumbnail_portfolio_viewmore.png') }}" style="width: 75px;">
+                                    <a href="{{ route('frontend.portfolio') }}"><span>View
+                                            More</span>
+                                        <br />
+                                        <br>
+                                        <img src="{{ asset('images/bnw/home/thumbnail_portfolio_viewmore.png') }}"
+                                            style="width: 75px;"></a>
                                 </div>
                             </div>
                         </div>
@@ -83,24 +87,26 @@
     </div>
 </section>
 
-<section class="pb-2 pt-5" style="background-color: #121213">
+<section class="py-5  " style="background-color: #121213">
     <div class="container">
         <div class="row pb-5">
-            <div class="col-12 text-white">
+            <div class="col-12 text-white text-md-left text-center">
                 <p class="t1-b-1 custom-font-playfair-displayregular mb-2 txt-header-contact">Our Services
                 </p>
                 <p>As a creative house, we can help you as:</p>
             </div>
         </div>
-        <div class="row text-white mb-5">
+        <div class="row text-white mb-3 text-md-left text-center">
             <div class="col-md-4 col-12">
-                <img src="{{ asset('images/bnw/services/bnw-web-services-design.jpg') }}" class="img-services mb-3">
-                <p class="t1-m-4 custom-font-playfair-displayregular mb-2 txt-header-contact">Designers</p>
-                <p>We help our clients communicate their ideas,<br /></p>
-                <p>project a great impression of their brand.<br /></p>
-                <p>Make them look good and recognizable.</p>
+                <div>
+                    <img src="{{ asset('images/bnw/services/bnw-web-services-design.jpg') }}" class="img-services mb-3">
+                    <p class="t1-m-4 custom-font-playfair-displayregular mb-2 txt-header-contact">Designers</p>
+                    <p>We help our clients communicate their ideas,<br /></p>
+                    <p>project a great impression of their brand.<br /></p>
+                    <p>Make them look good and recognizable.</p>
+                </div>
             </div>
-            <div class="col-md-4 col-12">
+            <div class="col-md-4 col-12 text-md-left text-center">
                 <img src="{{ asset('images/bnw/services/bnw-web-services-vstrategist.jpg') }}"
                     class="img-services mb-3">
                 <p class="t1-m-4 custom-font-playfair-displayregular mb-2 txt-header-contact">Visual Strategist</p>
@@ -108,7 +114,7 @@
                 <p>their strengths and ensuring relevance of all tools.<br /></p>
                 <p>Make them stand out and consistent.</p>
             </div>
-            <div class="col-md-4 col-12">
+            <div class="col-md-4 col-12 text-md-left text-center">
                 <img src="{{ asset('images/bnw/services/bnw-web-services-copywriters.jpg') }}"
                     class="img-services mb-3">
                 <p class="t1-m-4 custom-font-playfair-displayregular mb-2 txt-header-contact">Copywriters</p>
@@ -118,13 +124,124 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-1"><img src="{{ asset('images/bnw/services/bnw-web-services-dropdown-icon.png') }}"
-                    style="height:25px;"><br />
-                <img src="{{ asset('images/bnw/services/bnw-web-services-dropdown.png') }}" class="border-services">
+            <div></div>
+            <div class="col-md-1 col-12"><img
+                    src="{{ asset('images/bnw/services/bnw-web-services-dropdown-1.png') }}"><br />
+
+                <div class="col-md-3 text-white m-l--45">
+                    <p class="mb-3 mt-2">Details</p>
+                    <p class="custom-line-height">Company Logo<br />
+                        Brand Guideline<br />
+                        Corporate Stationery<br />
+                        Marketing Collaterals<br />
+                        Company Profile Design<br />
+                        Online Marketing Tools<br />
+                    </p>
+                </div>
+                <div class="col-md-1"><img
+                        src="{{ asset('images/bnw/services/bnw-web-services-dropdown-1.png') }}"><br />
+                </div>
+                <div class="col-md-3 text-white m-l--45">
+                    <p class="mb-3 mt-2">Details</p>
+                    <p class="custom-line-height">Company Logo<br />
+                        Brand Guideline<br />
+                        Corporate Stationery<br />
+                        Marketing Collaterals<br />
+                        Company Profile Design<br />
+                        Online Marketing Tools<br />
+                    </p>
+                </div>
+                <div class="col-md-1"><img
+                        src="{{ asset('images/bnw/services/bnw-web-services-dropdown-1.png') }}"><br />
+                </div>
+                <div class="col-md-3 text-white m-l--45">
+                    <p class="mb-3 mt-2">Details</p>
+                    <p class="custom-line-height">Company Logo<br />
+                        Brand Guideline<br />
+                        Corporate Stationery<br />
+                        Marketing Collaterals<br />
+                        Company Profile Design<br />
+                        Online Marketing Tools<br />
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
 </section>
+{{-- <section class="py-5 d-block d-md-none" style="background-color: #121213">
+    <div class="container">
+        <div class="row pb-5">
+            <div class="col-12 text-white text-center">
+                <p class="t1-b-1 custom-font-playfair-displayregular mb-2 txt-header-contact">Our Services
+                </p>
+                <p>As a creative house, we can help you as:</p>
+            </div>
+        </div>
+        <div class="row text-white mb-3">
+            <div class="col-md-4 col-12 text-center">
+                <img src="{{ asset('images/bnw/services/bnw-web-services-design.jpg') }}" class="img-services mb-3">
+<p class="t1-m-4 custom-font-playfair-displayregular mb-2 txt-header-contact">Designers</p>
+<p>We help our clients communicate their ideas,<br /></p>
+<p>project a great impression of their brand.<br /></p>
+<p>Make them look good and recognizable.</p>
+</div>
+<div class="col-md-4 col-12">
+    <img src="{{ asset('images/bnw/services/bnw-web-services-vstrategist.jpg') }}" class="img-services mb-3">
+    <p class="t1-m-4 custom-font-playfair-displayregular mb-2 txt-header-contact">Visual Strategist</p>
+    <p>We help our clients discover unique way to project<br /></p>
+    <p>their strengths and ensuring relevance of all tools.<br /></p>
+    <p>Make them stand out and consistent.</p>
+</div>
+<div class="col-md-4 col-12">
+    <img src="{{ asset('images/bnw/services/bnw-web-services-copywriters.jpg') }}" class="img-services mb-3">
+    <p class="t1-m-4 custom-font-playfair-displayregular mb-2 txt-header-contact">Copywriters</p>
+    <p>We help our clients pass on their key messages,<br /></p>
+    <p>summon positive feelings. Make them sound<br /> </p>
+    <p>professional and promising.</p>
+</div>
+</div>
+<div class="row">
+    <div class="col-md-1"><img src="{{ asset('images/bnw/services/bnw-web-services-dropdown-1.png') }}"
+            style="height:110%;"><br />
+    </div>
+    <div class="col-md-3 text-white m-l--45">
+        <p class="mb-3 mt-2">Details</p>
+        <p class="custom-line-height">Company Logo<br />
+            Brand Guideline<br />
+            Corporate Stationery<br />
+            Marketing Collaterals<br />
+            Company Profile Design<br />
+            Online Marketing Tools<br />
+        </p>
+    </div>
+    <div class="col-md-1"><img src="{{ asset('images/bnw/services/bnw-web-services-dropdown-1.png') }}"
+            style="height:110%;"><br />
+    </div>
+    <div class="col-md-3 text-white m-l--45">
+        <p class="mb-3 mt-2">Details</p>
+        <p class="custom-line-height">Company Logo<br />
+            Brand Guideline<br />
+            Corporate Stationery<br />
+            Marketing Collaterals<br />
+            Company Profile Design<br />
+            Online Marketing Tools<br />
+        </p>
+    </div>
+    <div class="col-md-1"><img src="{{ asset('images/bnw/services/bnw-web-services-dropdown-1.png') }}"
+            style="height:110%;"><br />
+    </div>
+    <div class="col-md-3 text-white m-l--45">
+        <p class="mb-3 mt-2">Details</p>
+        <p class="custom-line-height">Company Logo<br />
+            Brand Guideline<br />
+            Corporate Stationery<br />
+            Marketing Collaterals<br />
+            Company Profile Design<br />
+            Online Marketing Tools<br />
+        </p>
+    </div>
+</div>
+</div>
+</section> --}}
 @endsection
 @section('styles')
 <style>
@@ -137,12 +254,20 @@
         padding-left: 6px;
     }
 
+    .header-img {
+        min-height: 200px !important;
+    }
+
     .btn-paulmarc-more .w-25 {
         width: 75% !important;
     }
 
     .txt-header-main {
         font-size: 50px;
+    }
+
+    .txt-banner-spacing {
+        padding-top: 15%;
     }
 
     .txt-header-contact {
@@ -166,9 +291,13 @@
         padding: 0 5px;
     }
 
-    .card-box img{
+    .card-box img {
         width: 230px;
         height: auto;
+    }
+
+    .img-services {
+        width: 100%;
     }
 
     .scrolling-wrapper-flexbox::-webkit-scrollbar {
@@ -185,7 +314,8 @@
 
     .scrolling-wrapper-flexbox::-webkit-scrollbar-thumb {
         border-radius: 4px;
-        border: 1px solid white; /* should match background, can't be transparent */
+        border: 1px solid white;
+        /* should match background, can't be transparent */
         background-color: #fff;
     }
 
@@ -199,6 +329,15 @@
         .img-bnw {
             width: 100px;
             padding-bottom: 30px;
+        }
+
+        .txt-banner-spacing {
+            padding-top: 10%;
+        }
+
+        .spacing-home-1 {
+            padding-top: 100px;
+            padding-bottom: 100px;
         }
 
         .header-img {

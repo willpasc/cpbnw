@@ -15,15 +15,15 @@
         <div class=" w-100 header-img" style="background-image: url('{{ asset('images/bnw/contacts/bnw-web-contact-header.png') }}');
                 background-repeat: no-repeat;
                 background-position: center;
-                background-size: contain;">
+                background-size: cover;">
             <div class="container">
                 <div class="row" style="padding-top:10%;">
                     <div class="col-md-6 text-white h-100 d-flex justify-content-center flex-column">
                         <p class="t1-b-1 custom-font-playfair-displayregular mb-3 txt-header-contact">
                             Contacts
                         </p>
-                        <p>Let's have a chat or even a visit.</p>
-                        <p>Be a proud founder.</p>
+                        <p class="d-none d-md-block">Let's have a chat or even a visit.<br />
+                            Be a proud founder.</p>
                     </div>
                     <div class="col-md-6"></div>
                 </div>
@@ -35,7 +35,7 @@
 <section class="py-5" style="background-color: #121213">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-12 text-white">
+            <div class="col-md-6 col-12 text-white pb-5">
                 <p class="t1-b-1 custom-font-playfair-displayregular mb-5 txt-header-contact">Let's Talk
                 </p>
                 <p>Let’s have a chat, if you’re interested in what we do and what we’ve done.</p>
@@ -69,6 +69,10 @@
         font-size: 30px;
         text-align: center;
         margin-bottom: 50px;
+    }
+
+    .img-contact {
+        width: 100%;
     }
 
     @media (min-width: 576px) {}

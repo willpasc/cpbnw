@@ -55,6 +55,7 @@ Route::get('/contact', 'Frontend\HomeController@contact')->name('frontend.contac
 //BnW
 
 Route::get('/services', 'Frontend\HomeController@services')->name('frontend.services');
+Route::get('/portfolio/portfolio-details-1', 'Frontend\PortfolioController@portfolioDetails')->name('frontend.portfolio.portfolio-details-1');
 
 // FRONTEND PAUL
 Route::get('/paul_marc/introduction', 'Frontend\HomePaulController@introduction')->name('frontend.paul.introduction');

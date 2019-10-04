@@ -142,11 +142,10 @@
 
     <!-- Header Mobile -->
     <nav class="container-header-mobile">
-        <div class="wrap-header-mobile" style="background-color: black !important;">
+        <div class="wrap-header-mobile" style="background-color: rgba(26,30,40,1) !important;">
             <!-- Logo moblie -->
             <div class="logo-mobile">
-                <a href="{{ route('home') }}"><img src="{{ asset('images/escalier/logo-escalier-header.png') }}"
-                        alt="LOGO"></a>
+                <a href="{{ route('home') }}"><img src="{{ asset('images/bnw/bnw-web-logo.png') }}" alt="LOGO"></a>
             </div>
 
 
@@ -162,16 +161,21 @@
 
             <ul class="main-menu" style="background-color: #000 !important;">
                 <li>
-                    <a class="custom-font-avenir-light text-white" href="{{ route('home') }}">HOME</a>
+                    <a class="custom-font-avenir-light text-white" href="{{ route('frontend.about') }}">About Us</a>
                 </li>
 
                 <li>
-                    <a class="custom-font-avenir-light text-white"
-                        href="{{ route('frontend.portfolio') }}">PORTFOLIO</a>
+                    <a class="custom-font-avenir-light text-white" href="{{ route('frontend.services') }}">Our
+                        Services</a>
                 </li>
 
                 <li>
-                    <a class="custom-font-avenir-light text-white" href="{{ route('frontend.contact') }}">CONTACT US</a>
+                    <a class="custom-font-avenir-light text-white" href="{{ route('frontend.portfolio') }}">Our
+                        Portfolios</a>
+                </li>
+
+                <li>
+                    <a class="custom-font-avenir-light text-white" href="{{ route('frontend.contact') }}">Contacts</a>
                 </li>
             </ul>
         </div>

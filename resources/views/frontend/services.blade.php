@@ -16,7 +16,7 @@
         <div class=" w-100 header-img" style="background-image: url('{{ asset('images/bnw/home/bnw-web-home-header.jpg') }}');
                 background-repeat: no-repeat;
                 background-position: center;
-                background-size: contain;">
+                background-size: cover;">
             <div class="container">
                 <div class="row" style="padding-top:10%;">
                     <div class="col-md-6 text-white h-100 d-flex justify-content-center flex-column">

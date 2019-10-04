@@ -12,15 +12,15 @@
                     </div>
                 </div>
                 <div class="col-md-3"></div>
-                <div class="col-md-3">
-                    <div class="my-3 py-3 text-white" style="padding-left: 70px;">
+                <div class="col-md-3 text-md-left text-center">
+                    <div class="my-3 py-3 text-white">
                         <p><span class="font-weight-bold">P</span>&nbsp;&nbsp;&nbsp;+62 822 9982 3888</p>
                         <p><span class="font-weight-bold">E</span>&nbsp;&nbsp;&nbsp;info@benandwyatt.com</p>
                         <p class="mb-5"><span class="font-weight-bold">I</span>&nbsp;&nbsp;&nbsp;&nbsp;benandwyatt</p>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="my-3 py-3 text-white pl-5">
+                <div class="col-md-3 text-md-left text-center">
+                    <div class="my-3 py-3 text-white pl-md-5">
                         <p>Brooklyn Alam Sutera</p>
                         <p>Soho Tower A, 5th Floor</p>
                         <p>A/05/C - A/05/D</p>
