@@ -11,16 +11,18 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Portofolio
- * 
+ *
  * @property int $id
  * @property int $category_id
  * @property string $name
+ * @property string $brief
  * @property string $location
+ * @property string $description
  * @property \Carbon\Carbon $created_at
  * @property int $created_by
  * @property \Carbon\Carbon $updated_at
  * @property int $updated_by
- * 
+ *
  * @property \App\Models\Category $category
  * @property \App\Models\AdminUser $admin_user
  * @property \Illuminate\Database\Eloquent\Collection $portofolio_images
@@ -38,7 +40,9 @@ class Portofolio extends Eloquent
 	protected $fillable = [
 		'category_id',
 		'name',
+        'brief',
 		'location',
+        'description',
 		'created_by',
 		'updated_by'
 	];

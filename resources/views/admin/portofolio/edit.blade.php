@@ -66,20 +66,21 @@
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-12 mb-3">
-                                                        <label for="category">Kategori</label>
-                                                        <select id="category" name="category" class="custom-select form-control">
-                                                            @foreach($categories as $category)
-                                                                <option value="{{ $category->id }}" @if($category->id == $portofolio->category_id) selected @endif > {{ $category->name }}</option>
-                                                            @endforeach
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-12 mb-3">
                                                         <label for="name">Nama Portofolio</label>
                                                         <input type="text" id="name" name="name" class="form-control" value="{{ $portofolio->name }}" required>
                                                     </div>
+                                                </div>
+                                                <div class="row">
                                                     <div class="col-md-12 mb-3">
-                                                        <label for="location">Lokasi</label>
-                                                        <input type="text" class="form-control" id="location" name="location" value="{{ $portofolio->location }}" required>
+                                                        <label for="location">Brief</label>
+                                                        <input type="text" class="form-control" id="brief"
+                                                               name="brief" value="{{ $portofolio->brief }}">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 mb-3">
+                                                        <label for="description">Deskripsi</label>
+                                                        <textarea class="form-control" id="description" name="description">{{ $portofolio->description }}</textarea>
                                                     </div>
                                                 </div>
                                                 <div class="row">

@@ -26,22 +26,17 @@
                                         <i class="fa fa-plus-circle"></i> Add
                                     </a>
                                 </td>
-                                {{--<td>--}}
-                                {{--<a href="#" class="btn btn-outline-primary btn-lg btn-block">--}}
-                                {{--<i class="icon icon-report"></i> Report--}}
-                                {{--</a>--}}
-                                {{--</td>--}}
                             </tr>
                             </tbody>
                         </table>
-                        <table id="demoGrid" class="table table-striped table-bordered dt-responsive nowrap" width="100%" cellspacing="0">
+                        <table id="demoGrid" class="table table-striped table-bordered dt-responsive nowrap">
                             <thead>
                             <tr>
-                                <th>Kategori</th>
-                                <th>Nama</th>
-                                <th>Lokasi</th>
+                                <th style="width: 10%;">Nama</th>
+                                <th>Brief</th>
+                                <th>Deskripsi</th>
                                 <th>Dibuat pada</th>
-                                <th>DIubah pada</th>
+                                <th>Diubah pada</th>
                                 <th>Tindakan</th>
                             </tr>
                             </thead>
@@ -98,9 +93,9 @@
             ajax: '{!! route('datatables.portofolio') !!}',
             order: [ [0, 'asc'] ],
             columns: [
-                { data: 'category', name: 'category', class: 'text-center'},
                 { data: 'name', name: 'name', class: 'text-center'},
-                { data: 'location', name: 'location', class: 'text-center'},
+                { data: 'brief', name: 'brief'},
+                { data: 'description', name: 'description'},
                 { data: 'created_at', name: 'created_at', class: 'text-center', orderable: false, searchable: false,
                     render: function ( data, type, row ){
                         if ( type === 'display' || type === 'filter' ){

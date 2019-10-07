@@ -86,10 +86,6 @@ class PortofolioController extends Controller
             if ($validator->fails())
                 return redirect()->back()->withErrors($validator->errors())->withInput($request->all());
 
-            if ($request->input('category') == "-1") {
-                return back()->withErrors("Mohon pilih kategori!")->withInput($request->all());
-            }
-
             if(!$request->hasFile('main_image')){
                 return back()->withErrors("Gambar Utama wajib diunggah!")->withInput($request->all());
             }
@@ -100,8 +96,8 @@ class PortofolioController extends Controller
 
             $newPortofolio = Portofolio::create([
                 'name'          => $request->input('name'),
-                'location'      => $request->input('location'),
-                'category_id'   => $request->input('category'),
+                'brief'         => $request->input('brief') ?? '',
+                'description'   => $request->input('description') ?? '',
                 'status'        => 1,
                 'created_at'    => $dateTimeNow->toDateTimeString(),
                 'updated_at'    => $dateTimeNow->toDateTimeString(),
@@ -192,8 +188,8 @@ class PortofolioController extends Controller
             $dateTimeNow = Carbon::now('Asia/Jakarta');
 
             $portofolio->name = $request->input('name');
-            $portofolio->category_id = $request->input('category');
-            $portofolio->location = $request->input('location');
+            $portofolio->brief = $request->input('brief') ?? '';
+            $portofolio->description = $request->input('description') ?? '';
             $portofolio->updated_at = $dateTimeNow->toDateTimeString();
 
             $portofolio->save();

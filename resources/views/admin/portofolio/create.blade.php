@@ -47,26 +47,9 @@
                                                 <div class="col-md-6 mb-3">
                                                     <div class="row">
                                                         <div class="col-md-12 mb-3">
-                                                            <label for="category">Kategori *</label>
-                                                            <select id="category" name="category"
-                                                                class="custom-select form-control">
-                                                                <option value="-1">- Pilih Kategori -</option>
-                                                                @foreach($categories as $category)
-                                                                <option value="{{ $category->id }}" @if($category->id ==
-                                                                    old('category')) selected @endif
-                                                                    >{{ $category->name }}</option>
-                                                                @endforeach
-                                                            </select>
-                                                        </div>
-                                                        <div class="col-md-12 mb-3">
                                                             <label for="name">Nama Portofolio</label>
                                                             <input type="text" id="name" name="name"
                                                                 class="form-control" value="{{old('name')}}" required>
-                                                        </div>
-                                                        <div class="col-md-12 mb-3">
-                                                            <label for="location">Lokasi</label>
-                                                            <input type="text" class="form-control" id="location"
-                                                                name="location" value="{{old('location')}}" required>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -76,6 +59,19 @@
                                                     <label class="form-label">Unggah Gambar Lain</label>
                                                     {!! Form::file('detail_image[]', array('id' => 'detail_image',
                                                     'class' => 'file-loading', 'multiple' => 'multiple')) !!}
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 mb-3">
+                                                    <label for="location">Brief</label>
+                                                    <input type="text" class="form-control" id="brief"
+                                                           name="brief" value="{{ old('brief') }}">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 mb-3">
+                                                    <label for="description">Deskripsi</label>
+                                                    <textarea class="form-control" id="description" name="description">{{ old('description') }}</textarea>
                                                 </div>
                                             </div>
                                             <div class="row">
