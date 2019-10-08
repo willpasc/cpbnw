@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "d78d1df8974182c4a31b7434da2dde37",
@@ -962,12 +962,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/bootstrap-fileinput.git",
-                "reference": "dd3520ad5baf38637a0b9aeb9269045e16fc4cb8"
+                "reference": "926ba096e72004e12dcf61bb74e45dbfddfdb07e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/dd3520ad5baf38637a0b9aeb9269045e16fc4cb8",
-                "reference": "dd3520ad5baf38637a0b9aeb9269045e16fc4cb8",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/926ba096e72004e12dcf61bb74e45dbfddfdb07e",
+                "reference": "926ba096e72004e12dcf61bb74e45dbfddfdb07e",
                 "shasum": ""
             },
             "type": "library",
@@ -1007,7 +1007,7 @@
                 "progress",
                 "upload"
             ],
-            "time": "2019-09-21T11:07:27+00:00"
+            "time": "2019-09-29T17:49:34+00:00"
         },
         {
             "name": "kylekatarnls/update-helper",
@@ -4996,16 +4996,16 @@
         },
         {
             "name": "mockery/mockery",
-            "version": "1.2.3",
+            "version": "1.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mockery/mockery.git",
-                "reference": "4eff936d83eb809bde2c57a3cea0ee9643769031"
+                "reference": "b3453f75fd23d9fd41685f2148f4abeacabc6405"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mockery/mockery/zipball/4eff936d83eb809bde2c57a3cea0ee9643769031",
-                "reference": "4eff936d83eb809bde2c57a3cea0ee9643769031",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/b3453f75fd23d9fd41685f2148f4abeacabc6405",
+                "reference": "b3453f75fd23d9fd41685f2148f4abeacabc6405",
                 "shasum": ""
             },
             "require": {
@@ -5019,7 +5019,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
@@ -5057,7 +5057,7 @@
                 "test double",
                 "testing"
             ],
-            "time": "2019-08-07T15:01:07+00:00"
+            "time": "2019-09-30T08:30:27+00:00"
         },
         {
             "name": "myclabs/deep-copy",

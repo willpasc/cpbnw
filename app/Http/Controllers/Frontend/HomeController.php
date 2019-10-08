@@ -8,6 +8,7 @@ use App\Models\Portofolio;
 use App\Models\PortofolioImage;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 
 class HomeController extends Controller
@@ -64,22 +65,6 @@ class HomeController extends Controller
         return view('frontend.location');
     }
 
-    public function developer(){
-        return view('frontend.developer');
-    }
-
-    public function planMaster(){
-        return view('frontend.plan-master');
-    }
-
-    public function planFloor(){
-        return view('frontend.plan-floor');
-    }
-
-    public function planUnit(){
-        return view('frontend.plan-unit');
-    }
-
     public function features(){
         return view('frontend.features');
     }
@@ -90,17 +75,10 @@ class HomeController extends Controller
 
     //Escalier
     public function portfolio(){
-        $officePortofolios = Portofolio::where('category_id', 1)->get();
-
-        $visualPortofolios = Portofolio::where('category_id', 2)->get();
-        $residentialPortofolios = Portofolio::where('category_id', 3)->get();
-        $commercialPortofolios = Portofolio::where('category_id', 4)->get();
+        $portofolios = DB::table('portofolios')->paginate(5);
 
         $data = [
-            'officePortofolios'         => $officePortofolios,
-            'visualPortofolios'         => $visualPortofolios,
-            'residentialPortofolios'    => $residentialPortofolios,
-            'commercialPortofolios'     => $commercialPortofolios
+            'portofolios'         => $portofolios,
         ];
 
         return view('frontend.portfolio')->with($data);

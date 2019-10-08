@@ -80,7 +80,6 @@ class PortofolioController extends Controller
         try{
             $validator = Validator::make($request->all(), [
                 'name'        => 'required',
-                'location'             => 'required',
             ]);
 
             if ($validator->fails())
@@ -96,6 +95,7 @@ class PortofolioController extends Controller
 
             $newPortofolio = Portofolio::create([
                 'name'          => $request->input('name'),
+                'introduction'  => $request->input('introduction') ?? '',
                 'brief'         => $request->input('brief') ?? '',
                 'description'   => $request->input('description') ?? '',
                 'status'        => 1,
@@ -177,7 +177,6 @@ class PortofolioController extends Controller
         try{
             $validator = Validator::make($request->all(), [
                 'name'        => 'required',
-                'location'    => 'required',
             ]);
 
             if ($validator->fails())
@@ -188,6 +187,7 @@ class PortofolioController extends Controller
             $dateTimeNow = Carbon::now('Asia/Jakarta');
 
             $portofolio->name = $request->input('name');
+            $portofolio->introduction = $request->input('introduction') ?? '';
             $portofolio->brief = $request->input('brief') ?? '';
             $portofolio->description = $request->input('description') ?? '';
             $portofolio->updated_at = $dateTimeNow->toDateTimeString();

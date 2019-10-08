@@ -13,7 +13,7 @@
     </header>
 
     <div class="content-wrapper animatedParent animateOnce">
-        <div class="container">
+        <div class="container-fluid">
             <section class="paper-card">
                 <div class="row">
                     <div class="col-12">
@@ -29,15 +29,15 @@
                             </tr>
                             </tbody>
                         </table>
-                        <table id="demoGrid" class="table table-striped table-bordered dt-responsive nowrap">
+                        <table id="demoGrid" class="table table-striped table-bordered dt-responsive">
                             <thead>
                             <tr>
                                 <th style="width: 10%;">Nama</th>
-                                <th>Brief</th>
-                                <th>Deskripsi</th>
-                                <th>Dibuat pada</th>
-                                <th>Diubah pada</th>
-                                <th>Tindakan</th>
+                                <th style="width: 40%;">Pendahuluan</th>
+                                <th style="width: 30%;">Brief</th>
+                                <th style="width: 10%;">Dibuat pada</th>
+                                <th style="width: 10%;">Diubah pada</th>
+                                <th style="width: 10%;">Tindakan</th>
                             </tr>
                             </thead>
                             <tbody></tbody>
@@ -94,8 +94,8 @@
             order: [ [0, 'asc'] ],
             columns: [
                 { data: 'name', name: 'name', class: 'text-center'},
+                { data: 'introduction', name: 'introduction'},
                 { data: 'brief', name: 'brief'},
-                { data: 'description', name: 'description'},
                 { data: 'created_at', name: 'created_at', class: 'text-center', orderable: false, searchable: false,
                     render: function ( data, type, row ){
                         if ( type === 'display' || type === 'filter' ){

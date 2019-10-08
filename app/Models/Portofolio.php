@@ -15,6 +15,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  * @property int $id
  * @property int $category_id
  * @property string $name
+ * @property string $introduction
  * @property string $brief
  * @property string $location
  * @property string $description
@@ -40,6 +41,7 @@ class Portofolio extends Eloquent
 	protected $fillable = [
 		'category_id',
 		'name',
+        'introduction',
         'brief',
 		'location',
         'description',
@@ -59,6 +61,6 @@ class Portofolio extends Eloquent
 
 	public function portofolio_images()
 	{
-		return $this->hasMany(\App\Models\PortofolioImage::class);
+		return $this->hasMany(\App\Models\PortofolioImage::class, 'portofolio_id');
 	}
 }

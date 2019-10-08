@@ -12,21 +12,19 @@
     </div>
 </header>
 
+<div class="container-fluid">
+    <section class="paper-card">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body b-b">
+                        <div class="container-fluid animatedParent animateOnce my-3">
+                            <div class="animated fadeInUpShort">
+                                <!-- Input -->
+                                {{ Form::open(['route'=>['admin.portofolio.store'],'method' => 'post','id' => 'general-form', 'enctype' => 'multipart/form-data']) }}
 
-<div class="content-wrapper animatedParent animateOnce">
-    <div class="container">
-        <section class="paper-card">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card">
-                        <div class="card-body b-b">
-                            <div class="container-fluid animatedParent animateOnce my-3">
-                                <div class="animated fadeInUpShort">
-                                    <!-- Input -->
-                                    {{ Form::open(['route'=>['admin.portofolio.store'],'method' => 'post','id' => 'general-form', 'enctype' => 'multipart/form-data']) }}
-
-                                    @include('partials.admin._messages')
-                                    @foreach($errors->all() as $error)
+                                @include('partials.admin._messages')
+                                @foreach($errors->all() as $error)
                                     <ul>
                                         <li>
                                             <span class="help-block">
@@ -34,63 +32,67 @@
                                             </span>
                                         </li>
                                     </ul>
-                                    @endforeach
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="row">
-                                                <div class="col-md-6 mb-3">
-                                                    <label class="form-label">Unggah Gambar Utama *</label>
-                                                    {{--<input type="file" name="PhotoPosted" id="PhotoPosted" class="file-loading">--}}
-                                                    {!! Form::file('main_image', array('id' => 'main_image', 'class' =>
-                                                    'file-loading', 'accept' => 'image/*,application/pdf')) !!}
-                                                </div>
-                                                <div class="col-md-6 mb-3">
-                                                    <div class="row">
-                                                        <div class="col-md-12 mb-3">
-                                                            <label for="name">Nama Portofolio</label>
-                                                            <input type="text" id="name" name="name"
-                                                                class="form-control" value="{{old('name')}}" required>
-                                                        </div>
+                                @endforeach
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label class="form-label">Unggah Gambar Utama *</label>
+                                                {{--<input type="file" name="PhotoPosted" id="PhotoPosted" class="file-loading">--}}
+                                                {!! Form::file('main_image', array('id' => 'main_image', 'class' =>
+                                                'file-loading', 'accept' => 'image/*,application/pdf')) !!}
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <div class="row">
+                                                    <div class="col-md-12 mb-3">
+                                                        <label for="name">Nama Portofolio</label>
+                                                        <input type="text" id="name" name="name"
+                                                               class="form-control" value="{{old('name')}}" required>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-md-12 mb-3">
-                                                    <label class="form-label">Unggah Gambar Lain</label>
-                                                    {!! Form::file('detail_image[]', array('id' => 'detail_image',
-                                                    'class' => 'file-loading', 'multiple' => 'multiple')) !!}
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-12 mb-3">
-                                                    <label for="location">Brief</label>
-                                                    <input type="text" class="form-control" id="brief"
-                                                           name="brief" value="{{ old('brief') }}">
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-12 mb-3">
-                                                    <label for="description">Deskripsi</label>
-                                                    <textarea class="form-control" id="description" name="description">{{ old('description') }}</textarea>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <a href="{{ route('admin.portofolio.index') }}"
-                                                    class="btn btn-warning">Batal</a>
-                                                <button class="btn btn-success" type="submit">Simpan</button>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 mb-3">
+                                                <label class="form-label">Unggah Gambar Lain</label>
+                                                {!! Form::file('detail_image[]', array('id' => 'detail_image',
+                                                'class' => 'file-loading', 'multiple' => 'multiple')) !!}
                                             </div>
                                         </div>
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <label for="introduction">Pendahuluan</label>
+                                                <input type="text" class="form-control" id="introduction"
+                                                       name="introduction" value="{{ old('introduction') }}">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="brief">Brief</label>
+                                                <input type="text" class="form-control" id="brief"
+                                                       name="brief" value="{{ old('brief') }}">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 mb-3">
+                                                <label for="description">Deskripsi</label>
+                                                <textarea class="form-control" id="description" name="description">{{ old('description') }}</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <a href="{{ route('admin.portofolio.index') }}"
+                                               class="btn btn-warning">Batal</a>
+                                            <button class="btn btn-success" type="submit">Simpan</button>
+                                        </div>
                                     </div>
-                                    {{ Form::close() }}
-                                    <!-- #END# Input -->
                                 </div>
+                            {{ Form::close() }}
+                            <!-- #END# Input -->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 </div>
 @endsection
 

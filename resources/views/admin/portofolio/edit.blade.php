@@ -70,9 +70,14 @@
                                                         <input type="text" id="name" name="name" class="form-control" value="{{ $portofolio->name }}" required>
                                                     </div>
                                                 </div>
-                                                <div class="row">
-                                                    <div class="col-md-12 mb-3">
-                                                        <label for="location">Brief</label>
+                                                <div class="row mb-3">
+                                                    <div class="col-md-6">
+                                                        <label for="introduction">Pendahuluan</label>
+                                                        <input type="text" class="form-control" id="introduction"
+                                                               name="introduction" value="{{ $portofolio->introduction }}">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="brief">Brief</label>
                                                         <input type="text" class="form-control" id="brief"
                                                                name="brief" value="{{ $portofolio->brief }}">
                                                     </div>

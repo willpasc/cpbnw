@@ -12,8 +12,10 @@ use Illuminate\Support\Facades\Session;
 
 class PortfolioController extends Controller
 {
-    public function portfolioDetails()
+    public function show(int $id)
     {
-        return view('frontend.portfolio.portfolio-details-1');
+        $portofolio = Portofolio::find($id);
+
+        return view('frontend.portfolio.show', compact('portofolio'));
     }
 }
