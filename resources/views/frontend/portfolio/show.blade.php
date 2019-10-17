@@ -31,7 +31,7 @@
         </div>
         <div class="row">
             <div class="col-12">
-                @php( $images = \App\Models\PortofolioImage::where('portofolio_id', $portofolio->id)->where('is_main_image', 0)->get() )
+                @php( $images = \App\Models\PortofolioImage::where('portofolio_id', $portofolio->id)->orderBy('is_main_image')->get() )
                 @foreach($images as $image)
                     <img src="{{ asset('storage/portofolios/'. $image->path) }}"
                          class="img-portfolio pb-3">

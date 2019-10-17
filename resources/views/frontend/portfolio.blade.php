@@ -211,51 +211,33 @@
 {{--            </div>--}}
 {{--        </div>--}}
         <div class="row">
-            <div class="col-12">
-                {{ $portofolios->links() }}
+            <div class="col-12 text-center">
+                <div style="display: inline-block;">
+                    {{ $portofolios->links() }}
+                </div>
             </div>
         </div>
     </div>
 </section>
 @endsection
 @section('styles')
-<style>
-    .txt-subheader-contact {
-        font-size: 18px;
-    }
-
-    .btn-paulmarc-more .w-25 {
-        width: 75% !important;
-    }
-
-    .txt-header-contact {
-        font-size: 30px;
-        text-align: center;
-        margin-bottom: 50px;
-    }
-
-    .txt-banner-spacing {
-        padding-top: 15%;
-    }
-
-    .img-portfolio {
-        /* width: 600px; */
-        width: 100%;
-    }
-
-    @media (min-width: 576px) {}
-
-    @media (min-width: 768px) {
-        .img-about {
-            max-width: 550px;
+    <style>
+        .txt-subheader-contact {
+            font-size: 18px;
         }
 
-        .img-bnw {
-            width: 100px;
+        .btn-paulmarc-more .w-25 {
+            width: 75% !important;
+        }
+
+        .txt-header-contact {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 50px;
         }
 
         .txt-banner-spacing {
-            padding-top: 10%;
+            padding-top: 15%;
         }
 
         .img-portfolio {
@@ -263,40 +245,80 @@
             width: 100%;
         }
 
-        .padding-portfolio {
-            padding-top: 4%;
-            padding-left: 50px;
+        /* PAGINATION LINK OVERRIDE */
+        .page-item.active .page-link{
+            border: 2px solid #fff !important;
+            background-color: rgb(26,30,40) !important;
+            border-radius: 20px;
+            margin-right: 2px;
+            margin-left: 2px;
         }
 
-        .header-img {
-            min-height: 361px !important;
+        .page-link{
+            font-size: 18px;
+            color: #fff;
+            border: none !important;
+            background-color: rgb(26,30,40) !important;
+            margin-right: 2px;
+            margin-left: 2px;
+            padding: 0.25rem 0.75rem;
+            line-height: 1.5;
         }
 
-        .btn-paulmarc-more .w-25 {
-            width: 25% !important;
+        @media (min-width: 576px) {}
+
+        @media (min-width: 768px) {
+            .img-about {
+                max-width: 550px;
+            }
+
+            .img-bnw {
+                width: 100px;
+            }
+
+            .txt-banner-spacing {
+                padding-top: 10%;
+            }
+
+            .img-portfolio {
+                /* width: 600px; */
+                width: 100%;
+            }
+
+            .padding-portfolio {
+                padding-top: 4%;
+                padding-left: 50px;
+            }
+
+            .header-img {
+                min-height: 361px !important;
+            }
+
+            .btn-paulmarc-more .w-25 {
+                width: 25% !important;
+            }
+
+            .txt-header-contact {
+                font-size: 30px;
+                text-align: left;
+                margin-bottom: 50px;
+            }
+
+            .txt-header-about {
+                font-size: 30px;
+                margin-bottom: 10px;
+
+            }
         }
 
-        .txt-header-contact {
-            font-size: 30px;
-            text-align: left;
-            margin-bottom: 50px;
+        @media (min-width: 992px) {}
+
+        @media (min-width: 1200px) {
+            .header-img {
+                min-height: 500px;
+            }
         }
-
-        .txt-header-about {
-            font-size: 30px;
-            margin-bottom: 10px;
-
-        }
-    }
-
-    @media (min-width: 992px) {}
-
-    @media (min-width: 1200px) {
-        .header-img {
-            min-height: 500px;
-        }
-    }
-</style>
+    </style>
 @endsection
 
 @section('scripts')

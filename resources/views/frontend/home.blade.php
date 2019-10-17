@@ -71,7 +71,7 @@
                         <div style="height: 340px; width: 150px;">
                             <div class="text-white h-100 d-flex justify-content-center flex-column">
                                 <div class="w-100 text-center">
-                                    <a href="{{ route('frontend.portfolio') }}"><span>View
+                                    <a class="text-white" href="{{ route('frontend.portfolio') }}"><span>View
                                             More</span>
                                         <br />
                                         <br>
@@ -87,7 +87,7 @@
     </div>
 </section>
 
-<section class="py-5  " style="background-color: #121213">
+<section id="section_service" class="py-5" style="background-color: #121213">
     <div class="container">
         <div class="row pb-5">
             <div class="col-12 text-white text-md-left text-center">
@@ -128,7 +128,7 @@
             <div class="col-md-4 col-12 pb-5">
                 <div class="row">
                     <div class="col-12 ">
-                        <img src="{{ asset('images/bnw/services/bnw-web-services-design.jpg') }}"
+                        <img src="{{ asset('images/bnw/services/bnw-web-services-vstrategist.jpg') }}"
                             class="img-services mb-3">
                         <p class="t1-m-4 custom-font-acaslon-regular mb-2 txt-header-contact">Visual Strategist</p>
                         <p class="custom-font-avenir-medium">We help our clients discover unique way to project<br />
@@ -156,7 +156,7 @@
             <div class="col-md-4 col-12">
                 <div class="row">
                     <div class="col-12">
-                        <img src="{{ asset('images/bnw/services/bnw-web-services-design.jpg') }}"
+                        <img src="{{ asset('images/bnw/services/bnw-web-services-copywriters.jpg') }}"
                             class="img-services mb-3">
                         <p class="t1-m-4 custom-font-acaslon-regular mb-2 txt-header-contact">Copywriters</p>
                         <p class="custom-font-avenir-medium">We help our clients pass on their key messages,<br />
