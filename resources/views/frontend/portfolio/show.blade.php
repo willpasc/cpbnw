@@ -10,7 +10,7 @@
 @endsection
 
 @section('content')
-<section class="pb-4" style="background-color: rgb(26,30,40);">
+<section class="pb-4" style="background-color: rgb(26,30,40);padding-top: 100px !important;">
     <div class="container text-white">
         <div class="row pb-5">
             <div class="col-md-6 col-12">
@@ -31,16 +31,16 @@
         </div>
         <div class="row">
             <div class="col-12">
-                @php( $images = \App\Models\PortofolioImage::where('portofolio_id', $portofolio->id)->orderBy('is_main_image')->get() )
+                @php( $images = \App\Models\PortofolioImage::where('portofolio_id',
+                $portofolio->id)->orderBy('is_main_image')->get() )
                 @foreach($images as $image)
-                    <img src="{{ asset('storage/portofolios/'. $image->path) }}"
-                         class="img-portfolio pb-3">
+                <img src="{{ asset('storage/portofolios/'. $image->path) }}" class="img-portfolio pb-3">
                 @endforeach
 
-{{--                <img src="{{ asset('images/bnw/portfolio/1-bnw-web-portfolio-triniti-thumb.jpg') }}"--}}
-{{--                    class="img-portfolio pb-3">--}}
-{{--                <img src="{{ asset('images/bnw/portfolio/1-bnw-web-portfolio-triniti-thumb.jpg') }}"--}}
-{{--                    class="img-portfolio">--}}
+                {{--                <img src="{{ asset('images/bnw/portfolio/1-bnw-web-portfolio-triniti-thumb.jpg') }}"--}}
+                {{--                    class="img-portfolio pb-3">--}}
+                {{--                <img src="{{ asset('images/bnw/portfolio/1-bnw-web-portfolio-triniti-thumb.jpg') }}"--}}
+                {{--                    class="img-portfolio">--}}
             </div>
         </div>
     </div>

@@ -19,10 +19,10 @@
             <div class="container">
                 <div class="row" style="padding-top:10%;">
                     <div class="col-md-6 text-white h-100 d-flex justify-content-center flex-column">
-                        <p class="t1-b-1 custom-font-playfair-displayregular mb-3 txt-header-contact">
+                        <p class="t1-b-1 custom-font-acaslon-regular mb-3 txt-header-contact">
                             Contacts
                         </p>
-                        <p class="d-none d-md-block">Let's have a chat or even a visit.<br />
+                        <p class="d-none d-md-block custom-font-avenir-medium">Let's have a chat or even a visit.<br />
                             Be a proud founder.</p>
                     </div>
                     <div class="col-md-6"></div>
@@ -36,7 +36,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-12 text-white pb-5">
-                <p class="custom-font-avenir-medium mb-5 txt-header-contact">Let's Talk
+                <p class="custom-font-acaslon-regular mb-5 txt-header-contact">Let's Talk
                 </p>
                 <p class="custom-font-avenir-medium">Let’s have a chat, if you’re interested in what we do and what
                     we’ve done.</p>

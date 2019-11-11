@@ -20,12 +20,12 @@
             <div class="container">
                 <div class="row" style="padding-top:10%;">
                     <div class="col-md-6 text-white h-100 d-flex justify-content-center flex-column">
-                        <p class="t1-b-1 custom-font-playfair-displayregular mb-3 txt-header-contact">
+                        <p class="custom-font-acaslon-regular mb-3 txt-header-contact">
                             HELLO THERE
                         </p>
-                        <p>A bit of small talk, something really general to bridge</p>
-                        <p>an introduction to Ben & Wyatt. Needs just around</p>
-                        <p>this much of texts.</p>
+                        <p class="custom-font-avenir-medium">A bit of small talk, something really general to bridge</p>
+                        <p class="custom-font-avenir-medium">an introduction to Ben & Wyatt. Needs just around</p>
+                        <p class="custom-font-avenir-medium">this much of texts.</p>
                     </div>
                     <div class="col-md-6"></div>
                 </div>

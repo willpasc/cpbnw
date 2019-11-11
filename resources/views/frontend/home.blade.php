@@ -56,16 +56,24 @@
             <div class="col-md-9 col-12">
                 <div class="scrolling-wrapper-flexbox">
                     <div class="card-box">
-                        <img src="{{ asset('images/bnw/home/thumbnail_portfolio_1.jpg') }}" />
+                        <a href="../portfolio/detail/1">
+                            <img src="{{ asset('images/bnw/home/thumbnail_portfolio_1.jpg') }}" />
+                        </a>
                     </div>
                     <div class="card-box">
-                        <img src="{{ asset('images/bnw/home/thumbnail_portfolio_2.jpg') }}" />
+                        <a href="../portfolio/detail/2">
+                            <img src="{{ asset('images/bnw/home/thumbnail_portfolio_2.jpg') }}" />
+                        </a>
                     </div>
                     <div class="card-box">
-                        <img src="{{ asset('images/bnw/home/thumbnail_portfolio_3.jpg') }}" />
+                        <a href="../portfolio/detail/3">
+                            <img src="{{ asset('images/bnw/home/thumbnail_portfolio_3.jpg') }}" />
+                        </a>
                     </div>
                     <div class="card-box">
-                        <img src="{{ asset('images/bnw/home/thumbnail_portfolio_4.jpg') }}" />
+                        <a href="../portfolio/detail/4">
+                            <img src="{{ asset('images/bnw/home/thumbnail_portfolio_4.jpg') }}" />
+                        </a>
                     </div>
                     <div class="card-box">
                         <div style="height: 340px; width: 150px;">
@@ -76,7 +84,7 @@
                                         <br />
                                         <br>
                                         <img src="{{ asset('images/bnw/home/thumbnail_portfolio_viewmore.png') }}"
-                                            style="width: 75px;"></a>
+                                            style="width: 50px;"></a>
                                 </div>
                             </div>
                         </div>
@@ -109,25 +117,48 @@
                     </div>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-12 dropdown-services">
+                    <div class="col-1 dropdown-services">
                         <img src="{{ asset('images/bnw/services/bnw-web-services-dropdown-1.png') }}"
                             class="float-left dropdown-height">
-                        <div class="float-left text-left">
-                            <p class="mb-3 mt-2 custom-font-avenir-medium">Details</p>
-                            <p class="custom-line-height custom-font-avenir-medium">Company Logo<br />
-                                Brand Guideline<br />
-                                Corporate Stationery<br />
-                                Marketing Collaterals<br />
-                                Company Profile Design<br />
-                                Online Marketing Tools<br />
-                            </p>
+                    </div>
+                    <div class="col-md-11 col-11">
+                        <div class="text-left" style="position: relative; z-index: 999999;">
+                            <a href="#detailsdesigners" data-toggle="collapse" data-parent="accordion">
+                                <p class=" mb-2 mt-2 details-margs custom-font-avenir-medium text-white">Details
+                                    &nbsp;
+                                </p>
+                            </a>
+                            <div id="detailsdesigners" class="collapse"
+                                style="background-color: rgba(0,0,0,0);z-index:9999999 !important;">
+                                <div class="panel-body" style="z-index:9999999 !important;">
+                                    <div class="px-3 py-3">
+                                        <ul class="text-dark">
+                                            <li class="pb-3 custom-font-ubuntu-regular">
+                                                <div class="row">
+                                                    <div class="col-md-12 col-12">
+                                                        <p class="custom-line-height text-white custom-font-avenir-medium"
+                                                            style="">
+                                                            Company Logo<br />
+                                                            Brand Guideline<br />
+                                                            Corporate Stationery<br />
+                                                            Marketing Collaterals<br />
+                                                            Company Profile Design<br />
+                                                            Online Marketing Tools<br />
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-12 pb-5">
                 <div class="row">
-                    <div class="col-12 ">
+                    <div class="col-12">
                         <img src="{{ asset('images/bnw/services/bnw-web-services-vstrategist.jpg') }}"
                             class="img-services mb-3">
                         <p class="t1-m-4 custom-font-acaslon-regular mb-2 txt-header-contact">Visual Strategist</p>
@@ -137,23 +168,46 @@
                     </div>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-12 dropdown-services">
+                    <div class="col-1 dropdown-services">
                         <img src="{{ asset('images/bnw/services/bnw-web-services-dropdown-1.png') }}"
                             class="float-left dropdown-height">
-                        <div class="float-left text-left">
-                            <p class="mb-3 mt-2 custom-font-avenir-medium">Details</p>
-                            <p class="custom-line-height custom-font-avenir-medium">Project Naming<br />
-                                Video Storyline<br />
-                                Brand Personality<br />
-                                Website Development<br />
-                                Social Media Management<br />
-                                Paid Internet Advertising<br />
-                            </p>
+                    </div>
+                    <div class="col-md-11 col-11">
+                        <div class="text-left" style="position: relative; z-index: 999999;">
+                            <a href="#detailsvisual" data-toggle="collapse" data-parent="accordion">
+                                <p class=" mb-2 mt-2 details-margs custom-font-avenir-medium text-white">Details
+                                    &nbsp;
+                                </p>
+                            </a>
+                            <div id="detailsvisual" class="collapse"
+                                style="background-color: rgba(0,0,0,0);z-index:9999999 !important;">
+                                <div class="panel-body" style="z-index:9999999 !important;">
+                                    <div class="px-3 py-3">
+                                        <ul class="text-dark">
+                                            <li class="pb-3 custom-font-ubuntu-regular">
+                                                <div class="row">
+                                                    <div class="col-md-12 col-12">
+                                                        <p class="custom-line-height text-white custom-font-avenir-medium"
+                                                            style="">
+                                                            Project Naming<br />
+                                                            Video Storyline<br />
+                                                            Brand Personality<br />
+                                                            Website Development<br />
+                                                            Social Media Management<br />
+                                                            Paid Internet Advertising<br />
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-12">
+            <div class="col-md-4 col-12 pb-5">
                 <div class="row">
                     <div class="col-12">
                         <img src="{{ asset('images/bnw/services/bnw-web-services-copywriters.jpg') }}"
@@ -166,23 +220,48 @@
                     </div>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-12 dropdown-services">
+                    <div class="col-1 dropdown-services">
                         <img src="{{ asset('images/bnw/services/bnw-web-services-dropdown-1.png') }}"
                             class="float-left dropdown-height">
-                        <div class="float-left text-left">
-                            <p class="mb-3 mt-2 custom-font-avenir-medium">Details</p>
-                            <p class="custom-line-height custom-font-avenir-medium">Company & Product Story<br />
-                                Vision & Mission Statement<br />
-                                Core Values<br />
-                                Product Description<br />
-                                Company Profile<br />
-                                Marketing Content<br />
-                            </p>
+                    </div>
+                    <div class="col-md-11 col-11">
+                        <div class="text-left" style="position: relative; z-index: 999999;">
+                            <a href="#detailcopywriters" data-toggle="collapse" data-parent="accordion">
+                                <p class=" mb-2 mt-2 details-margs custom-font-avenir-medium text-white">Details
+                                    &nbsp;
+                                </p>
+                            </a>
+                            <div id="detailcopywriters" class="collapse"
+                                style="background-color: rgba(0,0,0,0);z-index:9999999 !important;">
+                                <div class="panel-body" style="z-index:9999999 !important;">
+                                    <div class="px-3 py-3">
+                                        <ul class="text-dark">
+                                            <li class="pb-3 custom-font-ubuntu-regular">
+                                                <div class="row">
+                                                    <div class="col-md-12 col-12">
+                                                        <p class="custom-line-height text-white custom-font-avenir-medium"
+                                                            style="">
+                                                            Company & Product Story<br />
+                                                            Vision & Mission Statement<br />
+                                                            Core Values<br />
+                                                            Product Description<br />
+                                                            Company Profile<br />
+                                                            Marketing Content<br />
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+    </div>
 </section>
 {{-- <section class="py-5 d-block d-md-none" style="background-color: #121213">
     <div class="container">
@@ -347,6 +426,10 @@
     @media (min-width: 576px) {}
 
     @media (min-width: 768px) {
+
+        .details-margs {
+            margin-left: 15px;
+        }
 
         .dropdown-services {
             padding-left: 0px;
