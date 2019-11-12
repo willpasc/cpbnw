@@ -122,8 +122,8 @@
                             class="float-left dropdown-height-1" id="drop1">
                     </div>
                     <div class="col-md-11 col-11">
-                        <div class="text-left" style="position: relative; z-index: 999999;" onclick="dropdown(1)">
-                            <a href="#detailsdesigners" data-toggle="collapse" data-parent="accordion">
+                        <div class="text-left" style="position: relative; z-index: 999999;">
+                            <a href="#detailsdesigners" data-toggle="collapse" data-parent="accordion" id="designers">
                                 <p class=" mb-2 mt-2 details-margs custom-font-avenir-medium text-white">Details
                                     &nbsp;
                                 </p>
@@ -175,7 +175,7 @@
                         </a>
                     </div>
                     <div class="col-md-11 col-11">
-                        <div class="text-left" style="position: relative; z-index: 999999;" onclick="dropdown(2)">
+                        <div class="text-left" style="position: relative; z-index: 999999;">
                             <a href="#detailsvisual" data-toggle="collapse" data-parent="accordion">
                                 <p class=" mb-2 mt-2 details-margs custom-font-avenir-medium text-white">Details
                                     &nbsp;
@@ -227,7 +227,7 @@
                             class="float-left dropdown-height-1" id="drop3">
                     </div>
                     <div class="col-md-11 col-11">
-                        <div class="text-left" style="position: relative; z-index: 999999;" onclick="dropdown(3)">
+                        <div class="text-left" style="position: relative; z-index: 999999;">
                             <a href="#detailcopywriters" data-toggle="collapse" data-parent="accordion">
                                 <p class=" mb-2 mt-2 details-margs custom-font-avenir-medium text-white">Details
                                     &nbsp;
@@ -501,25 +501,74 @@
         if(typeid === 1) {
         $('#drop1').attr('src', "{{ asset('images/bnw/services/bnw-web-services-dropdown-1.png') }}");
         $('#drop1').css("height","265px");
-        $('#drop1').css("margin-left","15px");
+        $('#drop1').css("margin-left","0px");
         $('#drop1').css("margin-top","-10px");
         }
 
         if(typeid === 2) {
         $('#drop2').attr('src', "{{ asset('images/bnw/services/bnw-web-services-dropdown-1.png') }}");
         $('#drop2').css("height","265px");
-        $('#drop2').css("margin-left","15px");
+        $('#drop2').css("margin-left","0px");
         $('#drop2').css("margin-top","-10px");
         }
 
         if(typeid === 3) {
         $('#drop3').attr('src', "{{ asset('images/bnw/services/bnw-web-services-dropdown-1.png') }}");
         $('#drop3').css("height","265px");
-        $('#drop3').css("margin-left","15px");
+        $('#drop3').css("margin-left","0px");
         $('#drop3').css("margin-top","-10px");
         }
 
 }
+
+$('#detailsdesigners').on('show.bs.collapse', function(event){
+    $('#drop1').attr('src', "");
+    $('#drop1').attr('src', "{{ asset('images/bnw/services/bnw-web-services-dropdown-1.png') }}");
+    $('#drop1').css("margin-left","0px");
+    $('#drop1').css("margin-top","-10px");
+    $('#drop1').css("height","265px");
+});
+
+$('#detailsdesigners').on('hide.bs.collapse', function(event){
+    $('#drop1').attr('src', "");
+    $('#drop1').attr('src', "{{ asset('images/bnw/services/bnw-web-services-dropdown-icon.png') }}");
+    $('#drop1').css("margin-left","15px");
+    $('#drop1').css("margin-top","0px");
+    $('#drop1').css("height","25px");
+});
+
+$('#detailsvisual').on('show.bs.collapse', function(event){
+    $('#drop2').attr('src', "");
+    $('#drop2').attr('src', "{{ asset('images/bnw/services/bnw-web-services-dropdown-1.png') }}");
+    $('#drop2').css("margin-left","0px");
+    $('#drop2').css("margin-top","-10px");
+    $('#drop2').css("height","265px");
+    
+});
+
+$('#detailsvisual').on('hide.bs.collapse', function(event){
+    $('#drop2').attr('src', "");
+    $('#drop2').attr('src', "{{ asset('images/bnw/services/bnw-web-services-dropdown-icon.png') }}");
+    $('#drop2').css("margin-left","15px");
+    $('#drop2').css("margin-top","0px");
+    $('#drop2').css("height","25px");
+});
+
+$('#detailcopywriters').on('show.bs.collapse', function(event){
+    $('#drop3').attr('src', "");
+    $('#drop3').attr('src', "{{ asset('images/bnw/services/bnw-web-services-dropdown-1.png') }}");
+    $('#drop3').css("margin-left","0px");
+    $('#drop3').css("margin-top","-10px");
+    $('#drop3').css("height","265px");
+});
+
+$('#detailcopywriters').on('hide.bs.collapse', function(event){
+    $('#drop3').attr('src', "");
+    $('#drop3').attr('src', "{{ asset('images/bnw/services/bnw-web-services-dropdown-icon.png') }}");
+    $('#drop3').css("margin-left","15px");
+    $('#drop3').css("margin-top","0px");
+    $('#drop3').css("height","25px");
+});
 
 </script>
 @endsection
