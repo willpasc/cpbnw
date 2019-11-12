@@ -118,11 +118,11 @@
                 </div>
                 <div class="row mt-3">
                     <div class="col-1 dropdown-services">
-                        <img src="{{ asset('images/bnw/services/bnw-web-services-dropdown-1.png') }}"
-                            class="float-left dropdown-height">
+                        <img src="{{ asset('images/bnw/services/bnw-web-services-dropdown-icon.png') }}"
+                            class="float-left dropdown-height-1" id="drop1">
                     </div>
                     <div class="col-md-11 col-11">
-                        <div class="text-left" style="position: relative; z-index: 999999;">
+                        <div class="text-left" style="position: relative; z-index: 999999;" onclick="dropdown(1)">
                             <a href="#detailsdesigners" data-toggle="collapse" data-parent="accordion">
                                 <p class=" mb-2 mt-2 details-margs custom-font-avenir-medium text-white">Details
                                     &nbsp;
@@ -169,11 +169,13 @@
                 </div>
                 <div class="row mt-3">
                     <div class="col-1 dropdown-services">
-                        <img src="{{ asset('images/bnw/services/bnw-web-services-dropdown-1.png') }}"
-                            class="float-left dropdown-height">
+                        <a href="#detailsvisual">
+                            <img src="{{ asset('images/bnw/services/bnw-web-services-dropdown-icon.png') }}"
+                                class="float-left dropdown-height-1" id="drop2">
+                        </a>
                     </div>
                     <div class="col-md-11 col-11">
-                        <div class="text-left" style="position: relative; z-index: 999999;">
+                        <div class="text-left" style="position: relative; z-index: 999999;" onclick="dropdown(2)">
                             <a href="#detailsvisual" data-toggle="collapse" data-parent="accordion">
                                 <p class=" mb-2 mt-2 details-margs custom-font-avenir-medium text-white">Details
                                     &nbsp;
@@ -221,11 +223,11 @@
                 </div>
                 <div class="row mt-3">
                     <div class="col-1 dropdown-services">
-                        <img src="{{ asset('images/bnw/services/bnw-web-services-dropdown-1.png') }}"
-                            class="float-left dropdown-height">
+                        <img src="{{ asset('images/bnw/services/bnw-web-services-dropdown-icon.png') }}"
+                            class="float-left dropdown-height-1" id="drop3">
                     </div>
                     <div class="col-md-11 col-11">
-                        <div class="text-left" style="position: relative; z-index: 999999;">
+                        <div class="text-left" style="position: relative; z-index: 999999;" onclick="dropdown(3)">
                             <a href="#detailcopywriters" data-toggle="collapse" data-parent="accordion">
                                 <p class=" mb-2 mt-2 details-margs custom-font-avenir-medium text-white">Details
                                     &nbsp;
@@ -345,6 +347,11 @@
         padding-left: 80px;
     }
 
+    .dropdown-height-1 {
+        height: 25px;
+        margin-left: 15px;
+    }
+
     .dropdown-height {
         height: 260px;
     }
@@ -429,6 +436,9 @@
 
         .details-margs {
             margin-left: 15px;
+            margin-left: 15px;
+            position: relative;
+            top: -8px;
         }
 
         .dropdown-services {
@@ -485,4 +495,31 @@
 @endsection
 
 @section('scripts')
+
+<script>
+    function dropdown(typeid){
+        if(typeid === 1) {
+        $('#drop1').attr('src', "{{ asset('images/bnw/services/bnw-web-services-dropdown-1.png') }}");
+        $('#drop1').css("height","265px");
+        $('#drop1').css("margin-left","15px");
+        $('#drop1').css("margin-top","-10px");
+        }
+
+        if(typeid === 2) {
+        $('#drop2').attr('src', "{{ asset('images/bnw/services/bnw-web-services-dropdown-1.png') }}");
+        $('#drop2').css("height","265px");
+        $('#drop2').css("margin-left","15px");
+        $('#drop2').css("margin-top","-10px");
+        }
+
+        if(typeid === 3) {
+        $('#drop3').attr('src', "{{ asset('images/bnw/services/bnw-web-services-dropdown-1.png') }}");
+        $('#drop3').css("height","265px");
+        $('#drop3').css("margin-left","15px");
+        $('#drop3').css("margin-top","-10px");
+        }
+
+}
+
+</script>
 @endsection
