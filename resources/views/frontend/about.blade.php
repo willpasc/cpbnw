@@ -41,43 +41,60 @@
             <div class="col-md-6 col-12 text-white">
                 <p class="custom-font-acaslon-regular mb-4 txt-header-contact">About
                 </p>
-                <p class="custom-font-avenir-medium pb-3 text-center text-md-left">We are designers, brand identity
+                <p class="custom-font-avenir-medium pb-3 text-left txt-proud ">We are designers, brand identity
                     specialists and creative
                     problem solvers.
                     We are the designer of the company’s credibility, reliability and professionalism
                     to all it’s audience, through well thought-out brand expressions and development.
                 </p>
-                <p class=" custom-font-avenir-medium m-b-80 text-center text-md-left">We specialize in providing quality
+                <p class=" custom-font-avenir-medium mb-md-5 mb-2 text-left txt-proud">We specialize in providing
+                    quality
                     custom branding, marketing
                     tools designs,
                     and professional scriptwriting. Whether you are building a brand new facility or
                     growing an existing development, we will help you grow and spread.
                 </p>
 
+                <div class="d-block d-md-none text-left">
+                    <p class="pb-3 pt-5 txt-proud">Regards,</p>
+                    <img src="{{ asset('images/bnw/about/bnw-web-logo-about.png') }}" class="img-bnw">
+                </div>
                 <p class=" custom-font-avenir-medium pb-3 d-none d-md-block">Regards,</p>
                 <img src="{{ asset('images/bnw/about/bnw-web-logo-about.png') }}" class="img-bnw d-none d-md-block">
 
             </div>
             <div class="col-md-1 custom-border-left2 d-none d-md-block"></div>
-            <div class="col-md-5 col-12 text-white">
+            <div class="col-md-5 col-12 text-white pt-md-0 pt-5 d-none d-md-block">
                 <p class="custom-font-acaslon-regular mb-4 txt-header-contact">Vision</p>
-                <p class=" custom-font-avenir-medium pb-5 text-center text-md-left">To be the first choice and a
+                <p class=" custom-font-avenir-medium pb-5 text-left">To be the first choice and a
                     trustworthy partner<br />
                     in showcasing brand’s values, strengths, and<br />
                     uniqueness through our services.
                 </p>
                 <p class="custom-font-acaslon-regular mb-4 txt-header-contact">Mission</p>
-                <p class="custom-font-avenir-medium text-center text-md-left">To build long term relationship with our
+                <p class="custom-font-avenir-medium text-left">To build long term relationship with our
                     clients,<br />
                     providing personalized yet exclusive<br />
                     brand design and development services.<br />
                     Applying creativity, experience, integrity and<br />
                     dedication to deliver exceptional outcomes.
                 </p>
-                <div class="d-block d-md-none text-center">
-                    <p class="pb-3 pt-5 ">Regards,</p>
-                    <img src="{{ asset('images/bnw/about/bnw-web-logo-about.png') }}" class="img-bnw">
-                </div>
+            </div>
+            <div class="col-md-5 col-12 text-white pt-md-0 pt-5 d-block d-md-none">
+                <p class="custom-font-acaslon-regular mb-4 txt-header-contact">Vision</p>
+                <p class=" custom-font-avenir-medium pb-5 text-left txt-proud">To be the first choice and a
+                    trustworthy partner
+                    in showcasing brand’s values, strengths, and
+                    uniqueness through our services.
+                </p>
+                <p class="custom-font-acaslon-regular mb-4 txt-header-contact">Mission</p>
+                <p class="custom-font-avenir-medium text-left txt-proud">To build long term relationship with our
+                    clients,<br />
+                    providing personalized yet exclusive
+                    brand design and development services.
+                    Applying creativity, experience, integrity and
+                    dedication to deliver exceptional outcomes.
+                </p>
             </div>
         </div>
 </section>
@@ -115,6 +132,10 @@
 @endsection
 @section('styles')
 <style>
+    .img-bnw {
+        width: 65px;
+    }
+
     .txt-subheader-contact {
         font-size: 18px;
     }
@@ -124,8 +145,8 @@
     }
 
     .txt-header-contact {
-        font-size: 30px;
-        text-align: center;
+        font-size: 26px;
+        text-align: left;
         margin-bottom: 50px;
     }
 

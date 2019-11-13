@@ -16,15 +16,15 @@
             <div class="col-md-6 col-12">
                 <p class="t1-b-1 custom-font-acaslon-regular mb-4 txt-header-contact">{{ $portofolio->name }}
                 </p>
-                <p class="custom-font-avenir-medium text-md-left text-center">
+                <p class="custom-font-avenir-medium text-left">
                     {!! $portofolio->description !!}
                 </p>
             </div>
-            <div class="col-md-2 text-md-left text-center portfolio-detail">
+            <div class="col-md-2 col-6 text-left portfolio-detail">
                 <p class="custom-font-acaslon-regular txt-portfolio-details pt-4">Client</p>
                 <p class="custom-font-avenir-medium">{{ $portofolio->name }}</p>
             </div>
-            <div class="col-md-4 text-md-left text-center portfolio-detail">
+            <div class="col-md-4 col-6 text-left portfolio-detail">
                 <p class="custom-font-acaslon-regular txt-portfolio-details pt-4">Brief</p>
                 <p class="custom-font-avenir-medium">{{ $portofolio->brief }}</p>
             </div>
@@ -61,8 +61,8 @@
     }
 
     .txt-header-contact {
-        font-size: 30px;
-        text-align: center;
+        font-size: 26px;
+        text-align: left;
         margin-bottom: 50px;
     }
 

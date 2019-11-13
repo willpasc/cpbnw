@@ -136,6 +136,20 @@
     border-color: #ddd;
 }
 
+@media (max-width: 576px) {
+    .txt-proud {
+        font-size: 13px;
+    }
+
+    .foot-margs {
+        margin-top: -15px;
+    }
+
+    .foot-padds {
+        padding-left: 110px;
+    }
+}
+
 @media (min-width: 576px) {
 
     .workshop-footer {
