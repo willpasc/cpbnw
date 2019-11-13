@@ -17,13 +17,13 @@
                 background-position: center;
                 background-size: cover;">
             <div class="container">
-                <div class="row txt-banner-spacing">
+                <div class="row txt-banner-spacing pb-md-0 pb-3">
                     <div class="col-md-6 text-white h-100 d-flex justify-content-center flex-column">
-                        <p class=" custom-font-acaslon-regular mb-3 txt-header-contact">
+                        <p class=" custom-font-acaslon-regular mb-md-3 txt-header-contact">
                             We serve as a<br />
                             creative company,
                         </p>
-                        <p class="custom-font-avenir-light custom-line-height d-none d-md-block">specializing in shaping
+                        <p class="custom-font-avenir-light custom-line-height-about txt-sub-about">specializing in shaping
                             client’s messages,<br />
                             brand and personality through innovative<br />
                             designs and stories.</p>
@@ -145,13 +145,16 @@
     }
 
     .txt-header-contact {
-        font-size: 26px;
+        font-size: 22px;
         text-align: left;
-        margin-bottom: 50px;
+    }
+
+    .txt-sub-about{
+        font-size: 14px;
     }
 
     .txt-banner-spacing {
-        padding-top: 15%;
+        padding-top: 5%;
     }
 
     .spacing-home-1 {
@@ -162,6 +165,10 @@
     @media (min-width: 576px) {}
 
     @media (min-width: 768px) {
+        .custom-line-height-about{
+            line-height: 2em;
+        }
+
         .img-about {
             max-width: 550px;
         }
@@ -186,6 +193,10 @@
             font-size: 30px;
             text-align: left;
             margin-bottom: 50px;
+        }
+
+        .txt-sub-about{
+            font-size: initial;
         }
 
         .txt-header-about {
