@@ -120,7 +120,7 @@
 }
 
 .logo-footer {
-    width: 160px;
+    width: 170px;
 }
 
 .footer-font-size {
@@ -146,7 +146,13 @@
     }
 
     .foot-padds {
-        padding-left: 110px;
+        /* padding-left: 110px; */
+        padding-left: 25px;
+    }
+
+    .logo-mobile {
+        height: 70%;
+        left: 15px;
     }
 }
 
@@ -158,6 +164,10 @@
 }
 
 @media (min-width: 768px) {
+    .foot-margs {
+        margin-top: -15px;
+    }
+
     .workshop-footer {
         padding-top: 3rem;
         margin-top: 1rem;

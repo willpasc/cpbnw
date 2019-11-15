@@ -34,7 +34,7 @@
     </div>
 </div>
 
-<section class="p-b-100" style="background-color: rgb(26,30,40);">
+<section class="p-b-50 px-md-0 px-3" style="background-color: rgb(26,30,40);">
     <div class="container text-white">
         @foreach($portofolios as $portofolio)
         <div class="row pt-3 pb-2">

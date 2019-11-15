@@ -10,26 +10,26 @@
 @endsection
 
 @section('content')
-<section class="pb-4" style="background-color: rgb(26,30,40);padding-top: 100px !important;">
-    <div class="container text-white">
+<section class="pb-4 px-md-0 px-3 pt-5 mt-md-4" style="background-color: rgb(26,30,40);">
+    <div class="container container-fluid text-white">
         <div class="row pb-5">
-            <div class="col-md-6 col-12">
+            <div class="col-md-5 col-12">
                 <p class="t1-b-1 custom-font-acaslon-regular mb-4 txt-header-contact">{{ $portofolio->name }}
                 </p>
                 <p class="custom-font-avenir-medium text-left">
                     {!! $portofolio->description !!}
                 </p>
             </div>
-            <div class="col-md-2 col-6 text-left portfolio-detail">
+            <div class="col-md-3 col-6 text-left portfolio-detail">
                 <p class="custom-font-acaslon-regular txt-portfolio-details pt-4">Client</p>
-                <p class="custom-font-avenir-medium">{{ $portofolio->name }}</p>
+                <p class="custom-font-avenir-medium txt-proud">{{ $portofolio->name }}</p>
             </div>
             <div class="col-md-4 col-6 text-left portfolio-detail">
                 <p class="custom-font-acaslon-regular txt-portfolio-details pt-4">Brief</p>
-                <p class="custom-font-avenir-medium">{{ $portofolio->brief }}</p>
+                <p class="custom-font-avenir-medium txt-proud">{{ $portofolio->brief }}</p>
             </div>
         </div>
-        <div class="row">
+        <div class="row no-gutters">
             <div class="col-12">
                 @php( $images = \App\Models\PortofolioImage::where('portofolio_id',
                 $portofolio->id)->orderBy('is_main_image')->get() )
@@ -49,7 +49,8 @@
 @section('styles')
 <style>
     .img-portfolio {
-        width: 100%;
+        width: 120%;
+        margin-left: -28px;
     }
 
     .txt-subheader-contact {

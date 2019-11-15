@@ -11,8 +11,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4 col-12"></div>
-                <div class="col-md-2 col-12 mb-md-0 mb-3 text-left foot-padds">
+                <div class="col-md-4 col-0"></div>
+                <div class="col-md-2 col-6 mb-md-0 mb-3 text-left foot-padds">
                     <div class="my-md-3 py-md-3 text-white txt-proud">
                         <p class="custom-font-avenir-medium"><span
                                 class="font-weight-bold custom-font-avenir-medium">P</span>&nbsp;&nbsp;&nbsp;+62 822
@@ -25,7 +25,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-3 col-12 text-left foot-padds">
+                <div class="col-md-3 col-6 text-left foot-padds">
                     <div class="my-md-3 py-md-3 text-white pl-md-5 txt-proud">
                         <p class="custom-font-avenir-medium">Brooklyn Alam Sutera<br />
                             Soho Tower A, 5th Floor<br />

@@ -32,28 +32,30 @@
     </div>
 </div>
 
-<section class="py-5" style="background-color: #121213">
+<section class="py-5 px-md-0 px-3" style="background-color: #121213">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-12 text-white pb-5">
                 <p class="custom-font-acaslon-regular mb-5 txt-header-contact">Let's Talk
                 </p>
-                <p class="custom-font-avenir-medium">Let’s have a chat, if you’re interested in what we do and what
+                <p class="custom-font-avenir-medium txt-proud">Let’s have a chat, if you’re interested in what we do and
+                    what
                     we’ve done.</p>
-                <p class="mb-5 custom-font-avenir-medium">For inquiries, info, requests et cetera, please contact us
+                <p class="mb-5 custom-font-avenir-medium txt-proud">For inquiries, info, requests et cetera, please
+                    contact us
                     through:</p>
 
-                <p class="custom-font-avenir-medium"><span
+                <p class="custom-font-avenir-medium txt-proud"><span
                         class="font-weight-bold custom-font-avenir-medium">P</span>&nbsp;&nbsp;&nbsp;+62 822 9982 3888
                 </p>
-                <p class="custom-font-avenir-medium"><span
+                <p class="custom-font-avenir-medium txt-proud"><span
                         class="font-weight-bold custom-font-avenir-medium">E</span>&nbsp;&nbsp;&nbsp;info@benandwyatt.com
                 </p>
-                <p class="mb-5"><span class="font-weight-bold">I</span
+                <p class="mb-5"><span class="font-weight-bold txt-proud">I</span
                         class="custom-font-avenir-medium">&nbsp;&nbsp;&nbsp;&nbsp;benandwyatt</p>
-                <p class="custom-font-avenir-medium">Brooklyn Alam Sutera</p>
-                <p class="custom-font-avenir-medium">Soho Tower A, 5th Floor</p>
-                <p class="custom-font-avenir-medium">A/05/C - A/05/D</p>
+                <p class="custom-font-avenir-medium txt-proud">Brooklyn Alam Sutera</p>
+                <p class="custom-font-avenir-medium txt-proud">Soho Tower A, 5th Floor</p>
+                <p class="custom-font-avenir-medium txt-proud">A/05/C - A/05/D</p>
             </div>
             <div class="col-md-6 text-white">
                 <p class="custom-font-acaslon-regular mb-5 txt-header-contact">Find Us</p>
@@ -73,8 +75,7 @@
     }
 
     .txt-header-contact {
-        font-size: 30px;
-        text-align: center;
+        font-size: 26px;
         margin-bottom: 50px;
     }
 

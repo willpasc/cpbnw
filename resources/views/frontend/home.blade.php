@@ -21,9 +21,9 @@
                         </p>
                         <p class="custom-font-avenir-medium  d-block d-md-none"
                             style="font-size:13px;padding-left:20px;">
-                            Lorem ipsum dolor sit, amet consectetur<br /> adipisicing
-                            elit. A aspernatur est consectetur <br />labore
-                            ad minus eum et! Asperiores?
+                            A bit of small talk, something really general<br />to bridge
+                            an introduction to Ben & Wyatt.<br /> Needs just around
+                            this much of texts.
                         </p>
                         <p class="custom-font-avenir-light custom-line-height d-none d-md-block">A bit of small talk,
                             something really
@@ -98,7 +98,7 @@
     </div>
 </section>
 
-<section id="section_service" class="pt-5 ourservices" style="background-color: #121213">
+<section id="section_service" class="pt-5 ourservices px-md-0 px-3" style="background-color: #121213">
     <div class="container">
         <div class="row pb-5">
             <div class="col-12 text-white text-left">
@@ -362,7 +362,7 @@
     .txt-header-main {
         font-size: 26px;
         padding-left: 20px;
-        padding-top: 465px;
+        padding-top: 450px;
     }
 
     .dropdown-services {
