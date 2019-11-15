@@ -98,6 +98,7 @@
                 </p>
             </div>
         </div>
+    </div>
 </section>
 <section class="spacing-home-2" style="background-color: rgb(26,30,40);">
     <div class="container">

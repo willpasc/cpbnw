@@ -17,12 +17,12 @@
                 background-position: center;
                 background-size: cover;">
             <div class="container">
-                <div class="row" style="padding-top:10%;">
+                <div class="row pb-md-0 pb-3 px-md-0 px-3" style="padding-top: 18%;">
                     <div class="col-md-6 text-white h-100 d-flex justify-content-center flex-column">
-                        <p class="t1-b-1 custom-font-acaslon-regular mb-3 txt-header-contact">
+                        <p class=" custom-font-acaslon-regular mb-md-3 txt-header-contact">
                             Contacts
                         </p>
-                        <p class="d-none d-md-block custom-font-avenir-medium">Let's have a chat or even a visit.<br />
+                        <p class="custom-font-avenir-light custom-line-height-about txt-sub-about">Let's have a chat or even a visit.<br />
                             Be a proud founder.</p>
                     </div>
                     <div class="col-md-6"></div>
@@ -51,8 +51,7 @@
                 <p class="custom-font-avenir-medium txt-proud"><span
                         class="font-weight-bold custom-font-avenir-medium">E</span>&nbsp;&nbsp;&nbsp;info@benandwyatt.com
                 </p>
-                <p class="mb-5"><span class="font-weight-bold txt-proud">I</span
-                        class="custom-font-avenir-medium">&nbsp;&nbsp;&nbsp;&nbsp;benandwyatt</p>
+                <p class="mb-5 custom-font-avenir-medium"><span class="font-weight-bold txt-proud">I</span>&nbsp;&nbsp;&nbsp;&nbsp;benandwyatt</p>
                 <p class="custom-font-avenir-medium txt-proud">Brooklyn Alam Sutera</p>
                 <p class="custom-font-avenir-medium txt-proud">Soho Tower A, 5th Floor</p>
                 <p class="custom-font-avenir-medium txt-proud">A/05/C - A/05/D</p>
@@ -66,21 +65,20 @@
 @endsection
 @section('styles')
 <style>
-    .txt-subheader-contact {
-        font-size: 18px;
-    }
-
-    .btn-paulmarc-more .w-25 {
-        width: 75% !important;
-    }
-
     .txt-header-contact {
-        font-size: 26px;
-        margin-bottom: 50px;
+        font-size: 22px;
+    }
+
+    .txt-sub-about {
+        font-size: 14px;
     }
 
     .img-contact {
         width: 100%;
+    }
+
+    .header-img{
+        min-height: 200px !important;
     }
 
     @media (min-width: 576px) {}
@@ -94,14 +92,14 @@
             min-height: 361px !important;
         }
 
-        .btn-paulmarc-more .w-25 {
-            width: 25% !important;
-        }
-
         .txt-header-contact {
             font-size: 30px;
             text-align: left;
             margin-bottom: 50px;
+        }
+
+        .txt-sub-about {
+            font-size: initial;
         }
     }
 

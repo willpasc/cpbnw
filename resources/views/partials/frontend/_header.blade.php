@@ -165,7 +165,7 @@
                 </li>
 
                 <li>
-                    <a class="custom-font-avenir-light text-white" href="{{ route('home') }}">Our
+                    <a class="custom-font-avenir-light text-white" href="{{ route('home') }}?#section_service">Our
                         Services</a>
                 </li>
 
