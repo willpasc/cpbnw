@@ -225,6 +225,7 @@
             font-size: 30px;
             text-align: left;
             margin-bottom: 50px;
+            line-height: 1.2em;
         }
 
         .txt-sub-about {
