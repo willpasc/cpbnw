@@ -197,9 +197,9 @@
     @media (min-width: 576px) {}
 
     @media (min-width: 768px) {
-        .custom-line-height-about {
+        /* .custom-line-height-about {
             line-height: 2em;
-        }
+        } */
 
         .img-about {
             max-width: 550px;

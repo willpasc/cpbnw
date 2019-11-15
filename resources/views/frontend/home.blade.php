@@ -25,7 +25,8 @@
                             an introduction to Ben & Wyatt.<br /> Needs just around
                             this much of texts.
                         </p>
-                        <p class="custom-font-avenir-light custom-line-height d-none d-md-block">A bit of small talk,
+                        <p class="custom-font-avenir-light custom-line-height d-none d-md-block pl-md-4">A bit of small
+                            talk,
                             something really
                             general to bridge<br />
                             an introduction to Ben & Wyatt. Needs just around<br />
@@ -113,8 +114,9 @@
                     <div class="col-12">
                         <img src="{{ asset('images/bnw/services/bnw-web-services-design.jpg') }}"
                             class="img-services mb-3">
-                        <p class="t1-m-4 custom-font-acaslon-regular mb-2 txt-header-contact">Designers</p>
-                        <p class="custom-font-avenir-medium d-none d-md-block">We help our clients communicate their
+                        <p class="t1-m-4 custom-font-acaslon-regular mb-2 txt-header-contact pl-md-3">Designers</p>
+                        <p class="custom-font-avenir-medium d-none d-md-block pl-md-3">We help our clients communicate
+                            their
                             ideas,<br />
                             project a great impression of their brand.<br />
                             Make them look good and recognizable.</p>
@@ -125,7 +127,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="row mt-3">
+                <div class="row mt-3 pl-md-3">
                     <div class="col-1 dropdown-services">
                         <img src="{{ asset('images/bnw/services/bnw-web-services-dropdown-icon.png') }}"
                             class="float-left dropdown-height-1" id="drop1">
@@ -170,13 +172,15 @@
                     <div class="col-12">
                         <img src="{{ asset('images/bnw/services/bnw-web-services-vstrategist.jpg') }}"
                             class="img-services mb-3">
-                        <p class="t1-m-4 custom-font-acaslon-regular mb-2 txt-header-contact">Visual Strategist</p>
-                        <p class="custom-font-avenir-medium">We help our clients discover unique way to project<br />
+                        <p class="t1-m-4 custom-font-acaslon-regular mb-2 txt-header-contact pl-md-3">Visual Strategist
+                        </p>
+                        <p class="custom-font-avenir-medium pl-md-3">We help our clients discover unique way to
+                            project<br />
                             their strengths and ensuring relevance of all tools.<br />
                             Make them stand out and consistent.</p>
                     </div>
                 </div>
-                <div class="row mt-3">
+                <div class="row mt-3 pl-md-3">
                     <div class="col-1 dropdown-services">
                         <a href="#detailsvisual">
                             <img src="{{ asset('images/bnw/services/bnw-web-services-dropdown-icon.png') }}"
@@ -223,8 +227,9 @@
                     <div class="col-12">
                         <img src="{{ asset('images/bnw/services/bnw-web-services-copywriters.jpg') }}"
                             class="img-services mb-3">
-                        <p class="t1-m-4 custom-font-acaslon-regular mb-2 txt-header-contact">Copywriters</p>
-                        <p class="custom-font-avenir-medium d-none d-md-block">We help our clients pass on their key
+                        <p class="t1-m-4 custom-font-acaslon-regular mb-2 txt-header-contact pl-md-3">Copywriters</p>
+                        <p class="custom-font-avenir-medium d-none d-md-block pl-md-3">We help our clients pass on their
+                            key
                             messages,<br />
                             summon
                             positive feelings. Make them sound professional and
@@ -237,7 +242,7 @@
                             promising.</p>
                     </div>
                 </div>
-                <div class="row mt-3">
+                <div class="row mt-3 pl-md-3">
                     <div class="col-1 dropdown-services">
                         <img src="{{ asset('images/bnw/services/bnw-web-services-dropdown-icon.png') }}"
                             class="float-left dropdown-height-1" id="drop3">
@@ -457,7 +462,7 @@
         }
 
         .header-img {
-            min-height: 675px;
+            min-height: 675px !important;
             background-image: url('{{ asset('images/bnw/home/bnw-mweb-landing-img_1.1.jpg') }}');
             background-repeat: no-repeat;
             background-position: center;
@@ -484,6 +489,7 @@
 
         .txt-header-main {
             font-size: 50px;
+            padding-top: 0px;
         }
 
         .details-margs {
@@ -516,7 +522,7 @@
         }
 
         .header-img {
-            min-height: 361px;
+            min-height: 361px !important;
             background-image: url('{{ asset('images/bnw/home/bnw-web-home-header.jpg') }}');
             background-repeat: no-repeat;
             background-position: center;

@@ -18,11 +18,11 @@
                 background-size: cover;">
             <div class="container">
                 <div class="row txt-banner-spacing">
-                    <div class="col-md-6 text-white h-100 d-flex justify-content-center flex-column">
+                    <div class="col-md-6 text-white h-100 d-flex justify-content-center flex-column ml-md-0 ml-3">
                         <p class="custom-font-acaslon-regular mb-3 txt-header-contact">
                             Our Portfolios
                         </p>
-                        <p class="custom-font-avenir-light d-none d-md-block">Something brief to describe our (recent)
+                        <p class="custom-font-avenir-light txt-proud">Something brief to describe our (recent)
                             works in<br />
                             Ben & Wyatt. We strive to deliver the best<br />
                             exceptional outcomes.</p>
@@ -230,6 +230,10 @@
 @endsection
 @section('styles')
 <style>
+    .header-img {
+        min-height: 200px !important;
+    }
+
     .txt-subheader-contact {
         font-size: 18px;
     }
@@ -239,9 +243,8 @@
     }
 
     .txt-header-contact {
-        font-size: 26px;
+        font-size: 22px;
         text-align: left;
-        margin-bottom: 50px;
     }
 
     .txt-banner-spacing {
