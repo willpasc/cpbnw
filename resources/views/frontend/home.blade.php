@@ -129,8 +129,10 @@
                 </div>
                 <div class="row mt-3 pl-md-3">
                     <div class="col-1 dropdown-services">
-                        <img src="{{ asset('images/bnw/services/bnw-web-services-dropdown-icon.png') }}"
-                            class="float-left dropdown-height-1" id="drop1">
+                        <a href="#detailsdesigners" data-toggle="collapse" data-parent="accordion">
+                            <img src="{{ asset('images/bnw/services/bnw-web-services-dropdown-icon.png') }}"
+                                class="float-left dropdown-height-1" id="drop1">
+                        </a>
                     </div>
                     <div class="col-md-11 col-11">
                         <div class="text-left" style="position: relative; z-index: 999999;">
@@ -174,15 +176,19 @@
                             class="img-services mb-3">
                         <p class="t1-m-4 custom-font-acaslon-regular mb-2 txt-header-contact pl-md-3">Visual Strategist
                         </p>
-                        <p class="custom-font-avenir-medium pl-md-3">We help our clients discover unique way to
+                        <p class="custom-font-avenir-medium pl-md-3 d-none d-md-block">We help our clients discover
+                            unique way to
                             project<br />
                             their strengths and ensuring relevance of all tools.<br />
+                            Make them stand out and consistent.</p>
+                        <p class="custom-font-avenir-medium pl-md-3 d-block d-md-none txt-proud">We help our clients
+                            discover unique way to project their strengths and ensuring relevance of all tools.
                             Make them stand out and consistent.</p>
                     </div>
                 </div>
                 <div class="row mt-3 pl-md-3">
                     <div class="col-1 dropdown-services">
-                        <a href="#detailsvisual">
+                        <a href="#detailsvisual" data-toggle="collapse" data-parent="accordion">
                             <img src="{{ asset('images/bnw/services/bnw-web-services-dropdown-icon.png') }}"
                                 class="float-left dropdown-height-1" id="drop2">
                         </a>
@@ -244,8 +250,10 @@
                 </div>
                 <div class="row mt-3 pl-md-3">
                     <div class="col-1 dropdown-services">
-                        <img src="{{ asset('images/bnw/services/bnw-web-services-dropdown-icon.png') }}"
-                            class="float-left dropdown-height-1" id="drop3">
+                        <a href="#detailcopywriters" data-toggle="collapse" data-parent="accordion">
+                            <img src="{{ asset('images/bnw/services/bnw-web-services-dropdown-icon.png') }}"
+                                class="float-left dropdown-height-1" id="drop3">
+                        </a>
                     </div>
                     <div class="col-md-11 col-11">
                         <div class="text-left" style="position: relative; z-index: 999999;">
